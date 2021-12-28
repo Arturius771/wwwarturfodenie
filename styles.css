@@ -5,7 +5,7 @@ body{
     font-size: 20px;	
     font-family: Arial, Helvetica, sans-serif;
 	color: #000000;	    
-    margin: auto;
+    margin: auto;    
 }
 
 a{
@@ -15,7 +15,7 @@ a{
 }
 
 div.featured_projects{
-	width: 256px;    
+	width: 25%;    
 }
 
 div.main_image{
@@ -32,6 +32,8 @@ div.navbar{
     position: absolute;
     top: 0;
     margin-left: 215px;
+    margin-top: 15px;
+    font-size: 110%;
 }
 
 .featured_projects{
@@ -39,19 +41,21 @@ div.navbar{
     padding-top: 30px;
 }
 
-img, a, p{
+img, a{
     max-width: 99%;
     max-height: 99%;
 	font-size: 99%;
 }
 
-img:hover, a:hover{
+img:hover, a:hover, a.active_link{
     max-width: 100%;
     max-height: 100%;
 	font-size: 100%;
+    text-decoration: underline;
 }
 
-.main_content, .portfolio, footer, div.featured_projects, li{
+.main_content, .portfolio, footer, div.featured_projects, li, ul, p{
+    font-size: 100%;
     padding: 15px;
 }
 
@@ -59,6 +63,6 @@ footer{
     margin-top: 100px;
     width: 100%;
     background-color: #ff0000;    
-    font-size: 60%;
+    font-size: 50%;
     font-weight: bold;
 }
