@@ -41,7 +41,7 @@ div.featured_projects{
 }
 
 img.featured_projects, a.featured_projects{
-    min-width: 99%;
+    min-width: 98%;
     margin-top: 25px;
 }
 
