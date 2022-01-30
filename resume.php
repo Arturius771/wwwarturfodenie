@@ -27,7 +27,7 @@
     <li>TM358 Machine Learning and Artificial Intelligence</li>
     <li>TM470 Computing and IT Project</li>
     </ul>
-</div>		
+</div>
 <?php include('footer.php');?>
 </body>
 </html>

@@ -13,15 +13,15 @@
 	<li>Implementing web applications and interactive features.</li>
 	<li>Maintaining your trust and expectations.</li>
 	</ul>
-	</div>
-	<!--Featured Projects-->	
-	<div class="featured_projects">
-		<h2>Website Projects.</h2>
-		<a class="featured_projects" href="https://github.com/Arturius771/OU_TT284_TMA-01/tree/master/TMA01_af8367"><img class="featured_projects" src="files\2021-12-08_16-18-55.png" alt="Clickable image that links to GitHub">Walton Hall Museum of Odds & Ends Homepage</a>.
-		<a class="featured_projects" href="http://www.phasmocrew.org"><img class="featured_projects" src="files\PCfuzz.jpg" alt="Clickable image that links to GitHub">PhasmoCrew Homepage</a>.
-		<a class="featured_projects" href="http://www.arturfoden.ie"><img class="featured_projects" src="files/logo small.png" alt="Clickable image that links to GitHub">www.arturfoden.ie</a>.
-		<a class="featured_projects" href="https://github.com/Arturius771"><img class="featured_projects" src="files/GitHub_Logo.png" alt="Clickable image that links to GitHub">More of my projects are on GitHub</a>.
-	</div>
-	<?php include('footer.php');?>
+</div>
+<!--Featured Projects-->	
+<div class="featured_projects">
+	<h2>Website Projects.</h2>
+	<a class="featured_projects" href="https://github.com/Arturius771/OU_TT284_TMA-01/tree/master/TMA01_af8367"><img class="featured_projects" src="files/2021-12-08_16-18-55.png" alt="Clickable image that links to GitHub">Walton Hall Museum of Odds & Ends Homepage</a>.
+	<a class="featured_projects" href="http://www.phasmocrew.org"><img class="featured_projects" src="files/PCfuzz.jpg" alt="Clickable image that links to GitHub">PhasmoCrew Homepage</a>.
+	<a class="featured_projects" href="http://www.arturfoden.ie"><img class="featured_projects" src="files/logo_small.png" alt="Clickable image that links to GitHub">www.arturfoden.ie</a>.
+	<a class="featured_projects" href="https://github.com/Arturius771"><img class="featured_projects" src="files/GitHub_Logo.png" alt="Clickable image that links to GitHub">More of my projects are on GitHub</a>.
+</div>
+<?php include('footer.php');?>
 </body>
 </html>

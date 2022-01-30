@@ -6,4 +6,4 @@
 	<meta name="description" content="Artúr Foden's Personal Website">
     <title>Artúr Foden</title>
     <link rel="stylesheet" href="styles.css">
-    </head>
+</head>
