@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
     <meta charset="utf-8"/>
     <meta name="author" content="Artúr Foden">
 	<meta name="description" content="Artúr Foden's Personal Website">
