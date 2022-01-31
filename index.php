@@ -1,6 +1,6 @@
 <?php include('head.php');?>
-<body>
 <?php include('navbar.php');?>
+<body>
 <!--Main Content-->			
 <div class="main_content">	
 	<h1>I make websites.</h1>
