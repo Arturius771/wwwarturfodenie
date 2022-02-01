@@ -25,6 +25,13 @@ img:hover, a:hover, a.active_link{
     text-decoration: underline;
 }
 
+div.navbar, a.navbar{
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+    margin: 15px;
+}
+
 .main_content, div.featured_projects, li, p{
     font-size: 100%;
     padding: 15px;
@@ -46,10 +53,4 @@ footer{
     background-color: #ff0000;    
     font-size: 60%;
     font-weight: bold;
-}
-
-div.navbar, a.navbar{
-    margin: 30px;
-    height: 50px;
-    vertical-align: 60%;
 }

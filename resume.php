@@ -4,7 +4,7 @@
 <!--Main Content-->
 <div class="main_content">
     <h1>My CV.</h1>
-    <p>You can download a relatively up to date version of my CV <a href="files/Artúr Foden CV - CS.docx">by clicking here</a>. There you will see a complete version rather than the preview below, with further information on my work experience and <a href="projects.php">projects</a>.</p>
+    <p>You can download a relatively up to date version of my CV <a href="files/Artúr Foden CV - CS.pdf">by clicking here</a>. There you will see a complete version rather than the preview below, with further information on my work experience and <a href="projects.php">projects</a>.</p>
     <h2>Skills.</h2>
     <p>Computer Science - I have experience with Java, C#, ABAP, Python, SQL, PHP, HTML/CSS/XML and Javascript, in Windows/Linux environments. I have worked on development projects at work and in college that created solutions in the fields of web applications, website design, databases, interaction and experience design, and software engineering.</p>
     <p>Communication - My written and spoken English is clear and concise. I have practical experience dealing with customers on the phone, email, and in person and taking the time to be empathetic to their needs and to communicate solutions is a skill I have developed.</p>
