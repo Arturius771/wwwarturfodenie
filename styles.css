@@ -16,6 +16,11 @@ img, a{
     color: #ff0000;
     font-weight: bold;
     text-decoration: none;
+    vertical-align: middle;
+}
+
+div, li, p{
+    margin: 30px;
 }
 
 img:hover, a:hover, a.active_link{
@@ -25,20 +30,15 @@ img:hover, a:hover, a.active_link{
     text-decoration: underline;
 }
 
-div.navbar, a.navbar{
-    display: flex;
+div.navbar, a.navbar{    
     height: 50px;
     justify-content: space-around;
     margin: 15px;
-}
-
-.main_content, div.featured_projects, li, p{
-    font-size: 100%;
-    padding: 15px;
+    margin-bottom: 30px;
 }
 
 div.featured_projects{
-    width: 30%;
+    width: 40%;
 }
 
 img.featured_projects, a.featured_projects{

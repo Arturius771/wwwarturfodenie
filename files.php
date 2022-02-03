@@ -1,6 +1,6 @@
 <?php include('head.php');?>
-<?php include('navbar.php');?>
 <body>
+<?php include('navbar.php');?>
 <!--Main Content-->			
 <div class="main_content">
 	<h1>Downloads.</h1>
