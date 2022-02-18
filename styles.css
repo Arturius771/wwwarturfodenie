@@ -37,8 +37,13 @@ div.navbar, a.navbar{
     margin-bottom: 30px;
 }
 
+div.main_content{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 div.featured_projects{
-    width: 40%;
+    width: 40%;    
 }
 
 img.featured_projects, a.featured_projects{
