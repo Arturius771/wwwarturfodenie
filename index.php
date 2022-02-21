@@ -17,6 +17,7 @@
 <!--Featured Projects-->	
 <div class="featured_projects">
 	<h2>Website Projects.</h2>
+	<a class="featured_projects" href="https://astronomy.ie/audio/"><img class="featured_projects" src="files/astronomyie.png" alt="Astronomy Ireland Audio Page">Astronomy Ireland</a>.
 	<a class="featured_projects" href="https://github.com/Arturius771/OU_TT284_TMA-01/tree/master/TMA01_af8367"><img class="featured_projects" src="files/2021-12-08_16-18-55.png" alt="Clickable image that links to GitHub">Walton Hall Museum of Odds & Ends Homepage</a>.
 	<a class="featured_projects" href="http://www.phasmocrew.org"><img class="featured_projects" src="files/PCfuzz.jpg" alt="Clickable image that links to GitHub">PhasmoCrew Homepage</a>.
 	<a class="featured_projects" href="http://www.arturfoden.ie"><img class="featured_projects" src="files/logo_small.png" alt="Clickable image that links to GitHub">www.arturfoden.ie</a>.
