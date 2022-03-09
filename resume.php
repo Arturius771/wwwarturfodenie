@@ -22,8 +22,8 @@
     <li>M269 Algorithms, Data Structures and Computability</li>
     <li>TM255 Communication and Information Technologies</li>
     <li>TT284 Web Technology</li>
+    <li>TM351 Data Management and Anlysis</li>
     <li>TM354 Software Engineering</li>
-    <li>TM352 Web, Mobile and Cloud Technologies</li>
     <li>TM358 Machine Learning and Artificial Intelligence</li>
     <li>TM470 Computing and IT Project</li>
     </ul>
