@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AfHeaderComponent } from './af-header/af-header.component';
 import { AfFooterComponent } from './af-footer/af-footer.component';
 import { AfMainContentComponent } from './af-main-content/af-main-content.component';
 import { AfStudyRecordComponent } from './af-study-record/af-study-record.component';
+import { RouterModule } from '@angular/router';
+import { AfProjectsComponent } from './af-projects/af-projects.component';
+import { AfNavbarComponent } from './af-navbar/af-navbar.component';
 
 @NgModule({
   declarations: [
@@ -14,13 +16,23 @@ import { AfStudyRecordComponent } from './af-study-record/af-study-record.compon
     AfHeaderComponent,
     AfFooterComponent,
     AfMainContentComponent,
-    AfStudyRecordComponent
+    AfStudyRecordComponent,
+    AfProjectsComponent,
+    AfNavbarComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot([
+      { path: 'home', component: AfMainContentComponent },
+      { path: 'study-record', component: AfStudyRecordComponent },
+      { path: 'projects', component: AfProjectsComponent },
+      { path: '', redirectTo: '', pathMatch: 'full' },
+      { path: '**', component: AfMainContentComponent },
+      // { enableTracing: true } // <-- debugging purposes only
+    ]),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
