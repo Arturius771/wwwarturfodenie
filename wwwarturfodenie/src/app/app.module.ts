@@ -9,6 +9,7 @@ import { AfStudyRecordComponent } from './af-study-record/af-study-record.compon
 import { RouterModule } from '@angular/router';
 import { AfProjectsComponent } from './af-projects/af-projects.component';
 import { AfNavbarComponent } from './af-navbar/af-navbar.component';
+import { AfProjectCapsuleComponent } from './af-project-capsule/af-project-capsule.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { AfNavbarComponent } from './af-navbar/af-navbar.component';
     AfStudyRecordComponent,
     AfProjectsComponent,
     AfNavbarComponent,
+    AfProjectCapsuleComponent,
   ],
   imports: [
     BrowserModule,
