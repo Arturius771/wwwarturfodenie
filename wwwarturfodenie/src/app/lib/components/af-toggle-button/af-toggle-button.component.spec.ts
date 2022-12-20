@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AfNavbarComponent } from './af-navbar.component';
+import { AfToggleButtonComponent } from './af-toggle-button.component';
 
-describe('AfNavbarComponent', () => {
-  let component: AfNavbarComponent;
-  let fixture: ComponentFixture<AfNavbarComponent>;
+describe('AfToggleButtonComponent', () => {
+  let component: AfToggleButtonComponent;
+  let fixture: ComponentFixture<AfToggleButtonComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AfNavbarComponent ]
+      declarations: [ AfToggleButtonComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(AfNavbarComponent);
+    fixture = TestBed.createComponent(AfToggleButtonComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

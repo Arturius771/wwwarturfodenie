@@ -10,6 +10,9 @@ import { RouterModule } from '@angular/router';
 import { AfProjectsComponent } from './af-projects/af-projects.component';
 import { AfNavbarComponent } from './af-navbar/af-navbar.component';
 import { AfProjectCapsuleComponent } from './af-project-capsule/af-project-capsule.component';
+import { AfUniversityProjectCapsuleComponent } from './af-university-project-capsule/af-university-project-capsule.component';
+import { AfToggleButtonComponent } from './lib/components/af-toggle-button/af-toggle-button.component';
+import { AfLandingPageComponent } from './af-landing-page/af-landing-page.component';
 
 @NgModule({
   declarations: [
@@ -21,12 +24,15 @@ import { AfProjectCapsuleComponent } from './af-project-capsule/af-project-capsu
     AfProjectsComponent,
     AfNavbarComponent,
     AfProjectCapsuleComponent,
+    AfUniversityProjectCapsuleComponent,
+    AfToggleButtonComponent,
+    AfLandingPageComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot([
-      { path: 'home', component: AfMainContentComponent },
+      { path: 'home', component: AfLandingPageComponent },
       { path: 'study-record', component: AfStudyRecordComponent },
       { path: 'projects', component: AfProjectsComponent },
       { path: '', redirectTo: '', pathMatch: 'full' },
