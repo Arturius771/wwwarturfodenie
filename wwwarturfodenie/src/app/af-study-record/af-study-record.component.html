@@ -10,23 +10,33 @@
   <li>
     <app-af-university-projects-capsule
       module_code="TM111"
-      title="Introduction to Computing and Information Technology 1"
       module_result="Distinction"
+      [assessments]=""
+      title="Introduction to Computing and Information Technology 1"
+      github=""
+      website_address="https://www.open.ac.uk/courses/modules/tm111"
+      description="IT fundamentals, programming, and networking."
+      [resource_material]=""
     ></app-af-university-projects-capsule>
   </li>
   <li>
     <app-af-university-projects-capsule
       module_code="TM112"
+      [resource_material]="tm112_resources"
       title="Introduction to Computing and Information Technology 2"
       module_result="Distinction"
+      website_address="https://www.open.ac.uk/courses/modules/tm112"
+      description="Block 1: Computer hardware and architecture, data management, cloud computing, mobile devices - Block 2: Python programming and algorithms - Block 3: Security, hacking, surveillance"
     ></app-af-university-projects-capsule>
   </li>
   <li>
     <app-af-university-projects-capsule
       module_code="TM129"
-      title="Technology in Practise"
+      title="Technologies in Practise"
       module_result="Grade 2 Pass"
+      website_address="https://www.open.ac.uk/courses/modules/tm129"
       [resource_material]="tm129_resources"
+      description="Networking, operating system (Linux, architecture and virtualisation), robotics and AI"
     ></app-af-university-projects-capsule>
   </li>
   <li>
@@ -34,32 +44,19 @@
       module_code="MU123"
       title="Discovering Mathematics"
       module_result="Distinction"
-      [resource_material]="[
-        {
-          title: 'Discovering Mathematics Books: A, B, C, D',
-          author: 'Various Authors'
-        }
-      ]"
+      [resource_material]="mu123_resources"
     ></app-af-university-projects-capsule>
   </li>
   <li>
     <app-af-university-projects-capsule
       module_code="M250"
-      title="Object Oriented Java Programming"
       module_result="Distinction"
-      [assessments]="[
-        { code: 'TMA01', description: 'Book Library Manager (Java)' },
-        {
-          code: 'TMA02',
-          description:
-            'Rock Paper Scissors game, Dictionary HashMaps and HashSets, SIR Infection Rate model (Java)'
-        },
-        {
-          code: 'TMA03',
-          description:
-            'Roller Coaster Manager, Sailing Club and Boat Race Manager (Java) '
-        }
-      ]"
+      [assessments]="m250_assessments"
+      title="Object-oriented Java Programming"
+      github=""
+      website_address="https://www.open.ac.uk/courses/modules/m250"
+      description="Fundamentals of object-oriented programming taught with the BlueJ IDE and Java."
+      [resource_material]="m250_resources"
     ></app-af-university-projects-capsule>
   </li>
   <li>
@@ -67,57 +64,21 @@
       module_code="M269"
       title="Algorithms, Data Structures and Computability"
       module_result="Distinction"
-      [assessments]="[
-        {
-          code: 'TMA01',
-          description:
-            'Part 1: Sequence data types, iterative algorithms, and algorithm complexity - Part 2: Stacks, queues, and priority Queues (Python)'
-        },
-        {
-          code: 'TMA02',
-          description:
-            'Binary Trees, recursive functions and graphs, greedy algorithms (Python)'
-        },
-        {
-          code: 'TMA03',
-          description:
-            'Sets, bags, maps (Java) and logic (Propositional/Predicate) and well Formed Formulas, truth tables, Equivalence Problem essay (Python, SQL)'
-        }
-      ]"
-      [resource_material]="[
-        {
-          title: 'Objects First with Java',
-          author: 'Barnes, D. J., Kölling M.'
-        }
-      ]"
+      website_address="https://www.open.ac.uk/courses/modules/m269"
+      [assessments]="m269_assessments"
+      [resource_material]="m269_resources"
+      description="Algorithms and complexity (Big-O notation), runtime analysis, data structures (lists, stacks, queues, dictionaries, sets, trees, graphs, search algorithms, recursion, greedy. Python and Jupyter Notebooks. Logic, computability (eg. P != NP, halting problem etc)."
     ></app-af-university-projects-capsule>
   </li>
   <li>
     <app-af-university-projects-capsule
       module_code="TM255"
       title="Communication and Information Technologies"
+      [resource_material]="tm255_resources"
       module_result="Distinction"
-      [assessments]="[
-        {
-          code: 'TMA01',
-          description:
-            '5G, asynchronous communication technologies, access point configuration (Packet Tracer)'
-        },
-        {
-          code: 'TMA02',
-          description:
-            'Hotel Website Group Project (design, implementation, reflection) (WordPress)'
-        },
-        {
-          code: 'TMA03',
-          description:
-            'Ethical and Legal Frameworks of IT, Biometric Authentication Systems report (written assessments)'
-        },
-        {
-          code: 'EMA',
-          description: 'Quantum Cryptography Information Website (WordPress)'
-        }
-      ]"
+      website_address="https://www.open.ac.uk/courses/modules/tm255"
+      [assessments]="tm255_assessments"
+      description="General networking and communications module. Security, cryptography, IoT, WiFi/Cell networks, interaction and collaboration, virtualisation."
     ></app-af-university-projects-capsule>
   </li>
   <li>
@@ -125,30 +86,15 @@
       module_code="TT284"
       title="Web Technologies"
       module_result="Grade 2 Pass"
-      [assessments]="[
-        {
-          code: 'TMA01',
-          description: 'Museum landing page and report (HTML, CSS)'
-        },
-        {
-          code: 'TMA02',
-          description:
-            'Guesthouse CRUD web application and report (PHP, JavaScript, SQL, Regex, HTML, CSS)'
-        },
-        {
-          code: 'TMA03',
-          description:
-            'Guesthouse photo diary web application (JavaScript, HTML, CSS)'
-        },
-        {
-          code: 'EMA',
-          description:
-            'Walking Club website project (design, implementation, testing) (PHP, JavaScript, HTML, CSS)'
-        }
-      ]"
+      [assessments]="tt284_assessments"
     ></app-af-university-projects-capsule>
   </li>
-  <li></li>
+  <li>
+    <app-af-university-projects-capsule
+      module_code="TM351"
+      title="Data Management and Analysis"
+    ></app-af-university-projects-capsule>
+  </li>
   <li>
     <app-af-university-projects-capsule
       module_code="TM354"

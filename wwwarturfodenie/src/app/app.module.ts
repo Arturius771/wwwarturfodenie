@@ -35,8 +35,13 @@ import { AfLandingPageComponent } from './af-landing-page/af-landing-page.compon
       { path: 'home', component: AfLandingPageComponent },
       { path: 'study-record', component: AfStudyRecordComponent },
       { path: 'projects', component: AfProjectsComponent },
-      { path: '', redirectTo: '', pathMatch: 'full' },
-      { path: '**', component: AfMainContentComponent },
+      {
+        path: '',
+        redirectTo: '',
+        pathMatch: 'full',
+        component: AfLandingPageComponent,
+      },
+      { path: '**', component: AfLandingPageComponent },
       // { enableTracing: true } // <-- debugging purposes only
     ]),
   ],

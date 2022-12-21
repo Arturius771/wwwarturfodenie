@@ -2,5 +2,7 @@ export interface Book {
   title: string;
   author?: string;
   year?: number;
-  description?: string;
+  edition?: number;
+  url?: string;
+  article_title?: string;
 }

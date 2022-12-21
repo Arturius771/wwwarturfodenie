@@ -8,7 +8,7 @@ import { Assessment } from '../lib/model/assessment';
   styleUrls: ['./af-university-project-capsule.component.less'],
 })
 export class AfUniversityProjectCapsuleComponent extends AfProjectCapsuleComponent {
-  @Input() module_code?: string; //af todo: make this its own type
+  @Input() module_code?: string;
   @Input() assessments?: Array<Assessment>;
-  @Input() module_result?: number | string;
+  @Input() module_result: number | string = 'TBA';
 }
