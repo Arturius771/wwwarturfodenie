@@ -14,6 +14,7 @@ import { AfUniversityProjectCapsuleComponent } from './lib/components/af-univers
 import { AfToggleButtonComponent } from './lib/components/af-toggle-button/af-toggle-button.component';
 import { AfLandingPageComponent } from './af-landing-page/af-landing-page.component';
 import { AfResourceComponent } from './lib/components/af-resource/af-resource.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,7 @@ import { AfResourceComponent } from './lib/components/af-resource/af-resource.co
       // { enableTracing: true } // <-- debugging purposes only
     ]),
   ],
-  providers: [],
+  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

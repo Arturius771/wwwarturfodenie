@@ -10,9 +10,8 @@ import { Project } from '../../model/project';
 export class AfProjectCapsuleComponent implements Project {
   @Input() title: string = 'Project Name';
   @Input() github?: string;
-
   @Input() website_name: string = 'Website';
   @Input() url?: string;
-  @Input() description?: string;
+  @Input() description: string = 'Description';
   @Input() resource_material?: Array<Book>;
 }
