@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { AfProjectCapsuleComponent } from '../af-project-capsule/af-project-capsule.component';
-import { Dictionary } from '../lib/model/dictionary';
+import { Assessment } from '../lib/model/assessment';
 
 @Component({
   selector: 'app-af-university-projects-capsule',
@@ -8,6 +8,7 @@ import { Dictionary } from '../lib/model/dictionary';
   styleUrls: ['./af-university-project-capsule.component.less'],
 })
 export class AfUniversityProjectCapsuleComponent extends AfProjectCapsuleComponent {
-  @Input() module_code: String = 'CODE';
-  @Input() assignments!: Dictionary<string>;
+  @Input() module_code?: string; //af todo: make this its own type
+  @Input() assessments?: Array<Assessment>;
+  @Input() module_result?: number | string;
 }

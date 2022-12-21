@@ -1,4 +1,6 @@
+<label class="title">{{ title }}</label>
 <button (click)="onClick()">
-  <label *ngIf="this.boolean">Show</label>
-  <label *ngIf="!this.boolean">Hide</label>
+  <p *ngIf="this.boolean">Hide</p>
+  <p *ngIf="!this.boolean">Show</p>
 </button>
+<p *ngIf="this.boolean == true">{{ this.content }}</p>

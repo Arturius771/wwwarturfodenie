@@ -1,6 +1,36 @@
 <div>
-  <h4>{{ module_code }}</h4>
-  <h5 *ngIf="title">{{ title }}</h5>
+  <p class="module_code" *ngIf="module_code">{{ module_code }}</p>
+  <p class="title" *ngIf="title">{{ title }}</p>
 </div>
-<a *ngIf="website" href="{{ website }}">{{ website_name }}</a>
+<a *ngIf="website_address" href="{{ website_address }}">{{ website_name }}</a>
+<div class="grid">
+  <ul class="grid_item" *ngIf="module_result">
+    <p>
+      <u>Module Result:</u>
+      <li>{{ module_result }}</li>
+    </p>
+  </ul>
+  <ul class="grid_item" *ngIf="resource_material">
+    <p>
+      <label *ngIf="resource_material"><u>Books:</u></label>
+      <li *ngFor="let resource of resource_material">
+        {{ resource.author }}, <i>{{ resource.title }}</i>
+        <app-af-toggle-button
+          *ngIf="resource.description || resource.year"
+        ></app-af-toggle-button>
+      </li>
+    </p>
+  </ul>
+</div>
+<ul class="grid_item" *ngIf="assessments">
+  <p>
+    <label *ngIf="assessments"><u>Projects:</u></label>
+    <li *ngFor="let assessment of assessments">
+      <app-af-toggle-button
+        [title]="assessment.code"
+        [content]="assessment.description"
+      ></app-af-toggle-button>
+    </li>
+  </p>
+</ul>
 <p *ngIf="description">{{ description }}</p>

@@ -6,8 +6,9 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./af-toggle-button.component.less'],
 })
 export class AfToggleButtonComponent {
-  @Input() text = 'Button';
-  boolean = true;
+  @Input() title = 'Button';
+  @Input() content?: string;
+  boolean = false;
 
   onClick() {
     this.boolean = !this.boolean;

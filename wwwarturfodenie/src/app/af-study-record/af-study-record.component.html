@@ -11,67 +11,160 @@
     <app-af-university-projects-capsule
       module_code="TM111"
       title="Introduction to Computing and Information Technology 1"
-      description="test"
+      module_result="Distinction"
     ></app-af-university-projects-capsule>
   </li>
-  <li>TM112 Introduction to Computing and Information Technology 2</li>
-  <li>TM129 Technology in Practise</li>
-  <li>MU123 Discovering Mathematics</li>
-  <li>M250 Object Oriented Java Programming</li>
-  <li>M269 Algorithms, Data Structures and Computability</li>
-  <li>TM255 Communication and Information Technologies</li>
-  <li>TT284 Web Technology</li>
-  <li>TM351 Data Management and Anlysis</li>
-  <li>TM354 Software Engineering</li>
-  <li>TM358 Machine Learning and Artificial Intelligence</li>
-  <li>TM470 Computing and IT Project</li>
-</ul>
-
-<h2>University Projects</h2>
-<ul>
-  Computing and IT BSc:
-  <li>Book Library Manager (Java) M250 TMA01</li>
-  <li>Rock Paper Scissors game (Java) M250 TMA02</li>
-  <li>Dictionary HashMaps and HashSets (Java) M250 TMA02</li>
-  <li>SIR Infection Rate model (Java) M250 TMA02</li>
-  <li>Roller Coaster Manager (Java) M250 TM03</li>
-  <li>Sailing Club and Boat Race Manager (Java) M250 TMA03</li>
   <li>
-    Sequence data types, iterative algorithms, and algorithm complexity (Python)
-    M269 TMA01
-  </li>
-  <li>Stacks, queues, and priority Queues (Python) M269 TMA01</li>
-  <li>Binary Trees, recursive functions (Python) M269 TMA02</li>
-  <li>Graphs, greedy algorithms (Python) M269 TMA02</li>
-  <li>Sets, bags, maps (Python) M269 TMA03</li>
-  <li>
-    Logic (Propositional/Predicate), Well Formed Formulas, truth tables,
-    Equivalence Problem essay (Python, SQL) M269 TMA03
+    <app-af-university-projects-capsule
+      module_code="TM112"
+      title="Introduction to Computing and Information Technology 2"
+      module_result="Distinction"
+    ></app-af-university-projects-capsule>
   </li>
   <li>
-    5G, asynchronous communication technologies, access point configuration
-    (Forums, Packet Tracer) TM255 TMA01
+    <app-af-university-projects-capsule
+      module_code="TM129"
+      title="Technology in Practise"
+      module_result="Grade 2 Pass"
+      [resource_material]="tm129_resources"
+    ></app-af-university-projects-capsule>
   </li>
   <li>
-    Hotel Website Group Project (design, implementation, reflection) (WordPress)
-    TM255 TMA02
+    <app-af-university-projects-capsule
+      module_code="MU123"
+      title="Discovering Mathematics"
+      module_result="Distinction"
+      [resource_material]="[
+        {
+          title: 'Discovering Mathematics Books: A, B, C, D',
+          author: 'Various Authors'
+        }
+      ]"
+    ></app-af-university-projects-capsule>
   </li>
   <li>
-    Ethical and Legal Frameworks of IT, Biometric Authentication Systems report
-    (written assignments) TM255 TMA03
+    <app-af-university-projects-capsule
+      module_code="M250"
+      title="Object Oriented Java Programming"
+      module_result="Distinction"
+      [assessments]="[
+        { code: 'TMA01', description: 'Book Library Manager (Java)' },
+        {
+          code: 'TMA02',
+          description:
+            'Rock Paper Scissors game, Dictionary HashMaps and HashSets, SIR Infection Rate model (Java)'
+        },
+        {
+          code: 'TMA03',
+          description:
+            'Roller Coaster Manager, Sailing Club and Boat Race Manager (Java) '
+        }
+      ]"
+    ></app-af-university-projects-capsule>
   </li>
-  <li>Quantum Cryptography Information Website (WordPress) TM255 EMA</li>
-  <li>Museum landing page and report (HTML, CSS) TT284 TMA01</li>
   <li>
-    Guesthouse CRUD web application and report (PHP, JavaScript, SQL, Regex,
-    HTML, CSS) TT284 TMA02
+    <app-af-university-projects-capsule
+      module_code="M269"
+      title="Algorithms, Data Structures and Computability"
+      module_result="Distinction"
+      [assessments]="[
+        {
+          code: 'TMA01',
+          description:
+            'Part 1: Sequence data types, iterative algorithms, and algorithm complexity - Part 2: Stacks, queues, and priority Queues (Python)'
+        },
+        {
+          code: 'TMA02',
+          description:
+            'Binary Trees, recursive functions and graphs, greedy algorithms (Python)'
+        },
+        {
+          code: 'TMA03',
+          description:
+            'Sets, bags, maps (Java) and logic (Propositional/Predicate) and well Formed Formulas, truth tables, Equivalence Problem essay (Python, SQL)'
+        }
+      ]"
+      [resource_material]="[
+        {
+          title: 'Objects First with Java',
+          author: 'Barnes, D. J., Kölling M.'
+        }
+      ]"
+    ></app-af-university-projects-capsule>
   </li>
   <li>
-    Guesthouse photo diary web application (JavaScript, HTML, CSS) TT284 TMA03
+    <app-af-university-projects-capsule
+      module_code="TM255"
+      title="Communication and Information Technologies"
+      module_result="Distinction"
+      [assessments]="[
+        {
+          code: 'TMA01',
+          description:
+            '5G, asynchronous communication technologies, access point configuration (Packet Tracer)'
+        },
+        {
+          code: 'TMA02',
+          description:
+            'Hotel Website Group Project (design, implementation, reflection) (WordPress)'
+        },
+        {
+          code: 'TMA03',
+          description:
+            'Ethical and Legal Frameworks of IT, Biometric Authentication Systems report (written assessments)'
+        },
+        {
+          code: 'EMA',
+          description: 'Quantum Cryptography Information Website (WordPress)'
+        }
+      ]"
+    ></app-af-university-projects-capsule>
   </li>
   <li>
-    Walking Club website project (design, implementation, testing) (PHP,
-    JavaScript, HTML, CSS) TT284 EMA
+    <app-af-university-projects-capsule
+      module_code="TT284"
+      title="Web Technologies"
+      module_result="Grade 2 Pass"
+      [assessments]="[
+        {
+          code: 'TMA01',
+          description: 'Museum landing page and report (HTML, CSS)'
+        },
+        {
+          code: 'TMA02',
+          description:
+            'Guesthouse CRUD web application and report (PHP, JavaScript, SQL, Regex, HTML, CSS)'
+        },
+        {
+          code: 'TMA03',
+          description:
+            'Guesthouse photo diary web application (JavaScript, HTML, CSS)'
+        },
+        {
+          code: 'EMA',
+          description:
+            'Walking Club website project (design, implementation, testing) (PHP, JavaScript, HTML, CSS)'
+        }
+      ]"
+    ></app-af-university-projects-capsule>
   </li>
-  <li>... more to add</li>
+  <li></li>
+  <li>
+    <app-af-university-projects-capsule
+      module_code="TM354"
+      title="Software Engineering"
+    ></app-af-university-projects-capsule>
+  </li>
+  <li>
+    <app-af-university-projects-capsule
+      module_code="TM358"
+      title="Machine Learning and Artificial Intelligence"
+    ></app-af-university-projects-capsule>
+  </li>
+  <li>
+    <app-af-university-projects-capsule
+      module_code="TM470"
+      title="Computing and IT Project"
+    ></app-af-university-projects-capsule>
+  </li>
 </ul>
