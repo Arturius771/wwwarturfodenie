@@ -14,4 +14,5 @@ export class AfProjectCapsuleComponent implements Project {
   @Input() url?: string;
   @Input() description: string = 'Description';
   @Input() resource_material?: Array<Book>;
+  @Input() resource_software?: Array<Book>;
 }

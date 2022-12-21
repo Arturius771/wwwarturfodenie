@@ -85,15 +85,18 @@ export class AfStudyRecordComponent {
       edition: 3,
     },
     {
-      title: 'Anaconda',
-      author: 'Continuum analytics',
-      url: 'https://www.anaconda.com/',
-    },
-    {
       title: 'Logic and the Limits of Computing',
       author: 'The Open University',
       year: 2015,
       edition: 2,
+    },
+  ];
+
+  m269_resources_software: Array<Book> = [
+    {
+      title: 'Anaconda',
+      author: 'Continuum analytics',
+      url: 'https://www.anaconda.com/',
     },
   ];
 
@@ -119,7 +122,7 @@ export class AfStudyRecordComponent {
     },
   ];
 
-  tm255_resources: Array<Book> = [
+  tm255_resources_software: Array<Book> = [
     {
       title: 'Cisco Packet Tracer',
       author: 'Cisco',
