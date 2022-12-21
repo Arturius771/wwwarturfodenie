@@ -3,7 +3,7 @@
   <p class="title" *ngIf="title">{{ title }}</p>
 </div>
 <a *ngIf="github" href="{{ github }}">GitHub</a>
-<a *ngIf="website_address" href="{{ website_address }}">{{ website_name }}</a>
+<a *ngIf="url" href="{{ url }}">{{ website_name }}</a>
 <div class="grid">
   <ul class="grid_item" *ngIf="module_result">
     <p>
@@ -15,15 +15,7 @@
     <p>
       <label *ngIf="resource_material"><u>Resources:</u></label>
       <li *ngFor="let resource of resource_material">
-        {{ resource.author }}
-        <label *ngIf="resource.year">({{ resource.year }}) </label>
-        <label *ngIf="resource.article_title">
-          '{{ resource.article_title }}'
-        </label>
-        <i *ngIf="resource.url"
-          ><a href="{{ resource.url }}">{{ resource.title }}</a></i
-        ><i *ngIf="!resource.url">{{ resource.title }}</i>
-        <label *ngIf="resource.edition"> ed. {{ resource.edition }} </label>
+        <app-af-resource [resource]="resource"></app-af-resource>
       </li>
     </p>
   </ul>
@@ -33,7 +25,7 @@
     <label *ngIf="assessments"><u>Projects:</u></label>
     <li *ngFor="let assessment of assessments">
       <app-af-toggle-button
-        [title]="assessment.code"
+        [title]="assessment.assessment_title"
         [content]="assessment.description"
       ></app-af-toggle-button>
     </li>

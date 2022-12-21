@@ -1,4 +1,4 @@
 export interface Assessment {
-  code: string;
+  assessment_title: string;
   description: string;
 }

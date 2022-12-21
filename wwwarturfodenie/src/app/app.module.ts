@@ -9,10 +9,11 @@ import { AfStudyRecordComponent } from './af-study-record/af-study-record.compon
 import { RouterModule } from '@angular/router';
 import { AfProjectsComponent } from './af-projects/af-projects.component';
 import { AfNavbarComponent } from './af-navbar/af-navbar.component';
-import { AfProjectCapsuleComponent } from './af-project-capsule/af-project-capsule.component';
-import { AfUniversityProjectCapsuleComponent } from './af-university-project-capsule/af-university-project-capsule.component';
+import { AfProjectCapsuleComponent } from './lib/components/af-project-capsule/af-project-capsule.component';
+import { AfUniversityProjectCapsuleComponent } from './lib/components/af-university-project-capsule/af-university-project-capsule.component';
 import { AfToggleButtonComponent } from './lib/components/af-toggle-button/af-toggle-button.component';
 import { AfLandingPageComponent } from './af-landing-page/af-landing-page.component';
+import { AfResourceComponent } from './lib/components/af-resource/af-resource.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { AfLandingPageComponent } from './af-landing-page/af-landing-page.compon
     AfUniversityProjectCapsuleComponent,
     AfToggleButtonComponent,
     AfLandingPageComponent,
+    AfResourceComponent,
   ],
   imports: [
     BrowserModule,
