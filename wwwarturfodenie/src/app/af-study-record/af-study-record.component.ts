@@ -1,6 +1,19 @@
 import { Component } from '@angular/core';
-import { Assessment } from '../lib/model/assessment';
-import { Book } from '../lib/model/book';
+import { Module } from '../lib/model/module';
+
+// Example module:
+// tm111: Module = {
+//   module_code: 'TM111',
+//   assessments: [],
+//   module_result: 'Distinction',
+//   module_resources: [],
+//   module_software: [],
+//   title: 'Introduction to Computing and Information Technology 1',
+//   description: 'IT fundamentals, programming, and networking.',
+//   url: 'https://www.open.ac.uk/courses/modules/tm111',
+//   website_name: 'Website',
+//   github: '',
+// };
 
 @Component({
   selector: 'app-af-study-record',
@@ -8,152 +21,218 @@ import { Book } from '../lib/model/book';
   styleUrls: ['./af-study-record.component.less'],
 })
 export class AfStudyRecordComponent {
-  tm112_resources = [
-    { title: 'Python Documentation', url: 'https://docs.python.org/3.8/' },
-  ];
-
-  tm129_resources: Array<Book> = [
+  modules: Array<Module> = [
     {
-      title: 'Microsoft Networking Essentials',
-      author: 'Gibson, D.',
-      year: 2011,
+      module_code: 'TM111',
+      module_result: 'Distinction',
+      title: 'Introduction to Computing and Information Technology 1',
+      description: 'IT fundamentals, programming, and networking.',
+      url: 'https://www.open.ac.uk/courses/modules/tm111',
+      website_name: 'Website',
     },
-    { title: 'I, Robot', author: 'Asimov, I.', year: 1967 },
-  ];
-
-  mu123_resources: Array<Book> = [
     {
-      title: 'Discovering Mathematics Books: A, B, C, D',
-      author: 'Various Authors',
-    },
-  ];
-
-  m250_assessments: Array<Assessment> = [
-    { assessment_title: 'TMA01', description: 'Book Library Manager (Java)' },
-    {
-      assessment_title: 'TMA02',
+      module_code: 'TM112',
+      module_result: 'Distinction',
+      module_resources: [
+        { title: 'Python Documentation', url: 'https://docs.python.org/3.8/' },
+      ],
+      title: 'Introduction to Computing and Information Technology 2',
       description:
-        'Rock Paper Scissors game, Dictionary HashMaps and HashSets, SIR Infection Rate model (Java)',
+        'Block 1: Computer hardware and architecture, data management, cloud computing, mobile devices - Block 2: Python programming and algorithms - Block 3: Security, hacking, surveillance',
+      url: 'https://www.open.ac.uk/courses/modules/tm112',
+      website_name: 'Website',
     },
     {
-      assessment_title: 'TMA03',
+      module_code: 'TM129',
+      module_result: 'Grade 2 Pass',
+      module_resources: [
+        {
+          title: 'Microsoft Networking Essentials',
+          author: 'Gibson, D.',
+          year: 2011,
+        },
+        { title: 'I, Robot', author: 'Asimov, I.', year: 1967 },
+      ],
+      title: 'Technologies in Practise',
       description:
-        'Roller Coaster Manager, Sailing Club and Boat Race Manager - Member/organisation project that could read/write CSV files (Java)',
-    },
-  ];
-
-  m250_resources: Array<Book> = [
-    {
-      title: 'Objects First with Java',
-      author: 'Barnes, D. J., Kölling M.',
-      url: 'https://www.bluej.org/objects-first/',
-      year: 2017,
-      edition: 6,
+        'Networking, operating systems (Linux, architectures and virtualisation), robotics and AI',
+      url: 'https://www.open.ac.uk/courses/modules/tm129',
+      website_name: 'Website',
     },
     {
-      title: 'The Java® Language Specification',
-      author: 'Gosling, J., et al',
-      url: 'https://docs.oracle.com/javase/specs/jls/se16/html/index.html',
-      year: 2021,
-      article_title: 'Java SE 16 Edition',
+      module_code: 'MU123',
+      module_result: 'Distinction',
+      module_resources: [
+        {
+          title: 'Discovering Mathematics Books: A, B, C, D',
+          author: 'Various Authors',
+        },
+      ],
+      title: 'Discovering Mathematics',
+      description: '',
+      website_name: 'Website',
     },
-  ];
-
-  m269_assessments: Array<Assessment> = [
     {
-      assessment_title: 'TMA01',
+      module_code: 'M250',
+      assessments: [
+        {
+          assessment_title: 'TMA01',
+          description: 'Book Library Manager (Java)',
+        },
+        {
+          assessment_title: 'TMA02',
+          description:
+            'Rock Paper Scissors game, Dictionary HashMaps and HashSets, SIR Infection Rate model (Java)',
+        },
+        {
+          assessment_title: 'TMA03',
+          description:
+            'Roller Coaster Manager, Sailing Club and Boat Race Manager - Member/organisation project that could read/write CSV files (Java)',
+        },
+      ],
+      module_result: 'Distinction',
+      module_resources: [
+        {
+          title: 'Objects First with Java',
+          author: 'Barnes, D. J., Kölling M.',
+          url: 'https://www.bluej.org/objects-first/',
+          year: 2017,
+          edition: 6,
+        },
+        {
+          title: 'The Java® Language Specification',
+          author: 'Gosling, J., et al',
+          url: 'https://docs.oracle.com/javase/specs/jls/se16/html/index.html',
+          year: 2021,
+          article_title: 'Java SE 16 Edition',
+        },
+      ],
+      module_software: [
+        //af todo: add BlueJ
+      ],
+      title: 'Object-oriented Java Programming',
       description:
-        'Part 1: Sequence data types, iterative algorithms, and algorithm complexity - Part 2: Stacks, queues, and priority Queues (Python)',
+        'Fundamentals of object-oriented programming taught with the BlueJ IDE and Java.',
+      url: 'https://www.open.ac.uk/courses/modules/m250',
+      website_name: 'Website',
     },
     {
-      assessment_title: 'TMA02',
+      module_code: 'M269',
+      assessments: [
+        {
+          assessment_title: 'TMA01',
+          description:
+            'Part 1: Sequence data types, iterative algorithms, and algorithm complexity - Part 2: Stacks, queues, and priority Queues (Python)',
+        },
+        {
+          assessment_title: 'TMA02',
+          description:
+            'Binary Trees, recursive functions and graphs, greedy algorithms (Python)',
+        },
+        {
+          assessment_title: 'TMA03',
+          description:
+            'Sets, bags, maps (Java) and logic (Propositional/Predicate) and well Formed Formulas, truth tables, Equivalence Problem essay (Python, SQL)',
+        },
+      ],
+      module_result: 'Distinction',
+      module_resources: [
+        {
+          title: 'Algorithms, data structures and computability',
+          author: 'Wermelinger, M.',
+          year: 2021,
+          edition: 3,
+        },
+        {
+          title: 'Logic and the Limits of Computing',
+          author: 'The Open University',
+          year: 2015,
+          edition: 2,
+        },
+      ],
+      module_software: [
+        {
+          title: 'Anaconda',
+          author: 'Continuum analytics',
+          url: 'https://www.anaconda.com/',
+        },
+      ],
+      title: 'Algorithms, Data Structures and Computability',
       description:
-        'Binary Trees, recursive functions and graphs, greedy algorithms (Python)',
+        'Algorithms and complexity (Big-O notation), runtime analysis, data structures (lists, stacks, queues, dictionaries, sets, trees, graphs, search algorithms, recursion, greedy. Python and Jupyter Notebooks. Logic, computability (eg. P != NP, halting problem etc).',
+      url: 'https://www.open.ac.uk/courses/modules/m269',
+      website_name: 'Website',
     },
     {
-      assessment_title: 'TMA03',
+      module_code: 'TM255',
+      assessments: [
+        {
+          assessment_title: 'TMA01',
+          description:
+            '5G, asynchronous communication technologies, access point configuration (Packet Tracer)',
+        },
+        {
+          assessment_title: 'TMA02',
+          description:
+            'Hotel Website Group Project (design, implementation, reflection) (WordPress)',
+        },
+        {
+          assessment_title: 'TMA03',
+          description:
+            'Ethical and Legal Frameworks of IT, Biometric Authentication Systems report (written assessments)',
+        },
+        {
+          assessment_title: 'EMA',
+          description: 'Quantum Cryptography Information Website (WordPress)',
+        },
+      ],
+      module_result: 'Distinction',
+      module_software: [
+        {
+          title: 'Cisco Packet Tracer',
+          author: 'Cisco',
+          url: 'https://www.netacad.com/courses/packet-tracer',
+        },
+        {
+          title: 'VirtualBox',
+          author: 'Oracle',
+          url: 'https://www.virtualbox.org/',
+        },
+      ],
+      title: 'Communication and Information Technologies',
       description:
-        'Sets, bags, maps (Java) and logic (Propositional/Predicate) and well Formed Formulas, truth tables, Equivalence Problem essay (Python, SQL)',
-    },
-  ];
-
-  m269_resources: Array<Book> = [
-    {
-      title: 'Algorithms, data structures and computability',
-      author: 'Wermelinger, M.',
-      year: 2021,
-      edition: 3,
+        'General networking and communications module. Security, cryptography, IoT, WiFi/Cell networks, interaction and collaboration, virtualisation.',
+      url: 'https://www.open.ac.uk/courses/modules/tm255',
+      website_name: 'Website',
     },
     {
-      title: 'Logic and the Limits of Computing',
-      author: 'The Open University',
-      year: 2015,
-      edition: 2,
-    },
-  ];
-
-  m269_resources_software: Array<Book> = [
-    {
-      title: 'Anaconda',
-      author: 'Continuum analytics',
-      url: 'https://www.anaconda.com/',
-    },
-  ];
-
-  tm255_assessments: Array<Assessment> = [
-    {
-      assessment_title: 'TMA01',
-      description:
-        '5G, asynchronous communication technologies, access point configuration (Packet Tracer)',
-    },
-    {
-      assessment_title: 'TMA02',
-      description:
-        'Hotel Website Group Project (design, implementation, reflection) (WordPress)',
-    },
-    {
-      assessment_title: 'TMA03',
-      description:
-        'Ethical and Legal Frameworks of IT, Biometric Authentication Systems report (written assessments)',
-    },
-    {
-      assessment_title: 'EMA',
-      description: 'Quantum Cryptography Information Website (WordPress)',
-    },
-  ];
-
-  tm255_resources_software: Array<Book> = [
-    {
-      title: 'Cisco Packet Tracer',
-      author: 'Cisco',
-      url: 'https://www.netacad.com/courses/packet-tracer',
-    },
-    {
-      title: 'VirtualBox',
-      author: 'Oracle',
-      url: 'https://www.virtualbox.org/',
-    },
-  ];
-
-  tt284_assessments: Array<Assessment> = [
-    {
-      assessment_title: 'TMA01',
-      description: 'Museum landing page and report (HTML, CSS)',
-    },
-    {
-      assessment_title: 'TMA02',
-      description:
-        'Guesthouse CRUD web application and report (PHP, JavaScript, SQL, Regex, HTML, CSS)',
-    },
-    {
-      assessment_title: 'TMA03',
-      description:
-        'Guesthouse photo diary web application (JavaScript, HTML, CSS)',
-    },
-    {
-      assessment_title: 'EMA',
-      description:
-        'Walking Club website project (design, implementation, testing) (PHP, JavaScript, HTML, CSS)',
+      module_code: 'TT284',
+      assessments: [
+        {
+          assessment_title: 'TMA01',
+          description: 'Museum landing page and report (HTML, CSS)',
+        },
+        {
+          assessment_title: 'TMA02',
+          description:
+            'Guesthouse CRUD web application and report (PHP, JavaScript, SQL, Regex, HTML, CSS)',
+        },
+        {
+          assessment_title: 'TMA03',
+          description:
+            'Guesthouse photo diary web application (JavaScript, HTML, CSS)',
+        },
+        {
+          assessment_title: 'EMA',
+          description:
+            'Walking Club website project (design, implementation, testing) (PHP, JavaScript, HTML, CSS)',
+        },
+      ],
+      module_result: 'Grade 2 Pass',
+      title: 'Web Technologies',
+      description: '',
+      url: 'https://www.open.ac.uk/courses/modules/tt284',
+      website_name: 'Website',
     },
   ];
 }

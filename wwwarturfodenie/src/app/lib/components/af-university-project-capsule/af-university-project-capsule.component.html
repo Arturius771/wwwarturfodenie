@@ -1,28 +1,28 @@
 <div>
-  <p class="module_code" *ngIf="module_code">{{ module_code }}</p>
-  <p class="title" *ngIf="title">{{ title }}</p>
+  <p class="module_code" *ngIf="module.module_code">{{ module.module_code }}</p>
+  <p class="title" *ngIf="module.title">{{ module.title }}</p>
 </div>
-<a *ngIf="github" href="{{ github }}">GitHub</a>
-<a *ngIf="url" href="{{ url }}">{{ website_name }}</a>
+<a *ngIf="module.github" [href]="module.github">GitHub</a>
+<a *ngIf="module.url" [href]="module.url">{{ module.website_name }}</a>
 <div class="grid">
   <ul>
     <p>
-      <u>Module Result:</u>
-      <li>{{ module_result }}</li>
+      <u *ngIf="module.module_result">Module Result:</u>
+      <li>{{ module.module_result }}</li>
     </p>
   </ul>
   <ul>
     <p>
-      <label *ngIf="resource_material"><u>Resources:</u></label>
-      <li *ngFor="let resource of resource_material">
+      <u *ngIf="module.module_resources">Resources:</u>
+      <li *ngFor="let resource of module.module_resources">
         <app-af-resource [resource]="resource"></app-af-resource>
       </li>
     </p>
   </ul>
   <ul>
     <p>
-      <label *ngIf="assessments"><u>Projects:</u></label>
-      <li *ngFor="let assessment of assessments">
+      <u *ngIf="module.assessments">Projects:</u>
+      <li *ngFor="let assessment of module.assessments">
         <app-af-toggle-button
           [title]="assessment.assessment_title"
           [content]="assessment.description"
@@ -32,12 +32,11 @@
   </ul>
   <ul>
     <p>
-      <label *ngIf="resource_software"><u>Software:</u></label>
-      <li *ngFor="let resource of resource_software">
+      <u *ngIf="module.module_software">Software:</u>
+      <li *ngFor="let resource of module.module_software">
         <app-af-resource [resource]="resource"></app-af-resource>
       </li>
     </p>
   </ul>
 </div>
-
-<p *ngIf="description">{{ description }}</p>
+<p *ngIf="module.description">{{ module.description }}</p>
