@@ -36,6 +36,9 @@ export class AfStudyRecordComponent {
       module_resources: [
         { title: 'Python Documentation', url: 'https://docs.python.org/3.8/' },
       ],
+      module_software: [
+        { title: 'Python 3.8', url: 'https://www.python.org/' },
+      ],
       title: 'Introduction to Computing and Information Technology 2',
       description:
         'Block 1: Computer hardware and architecture, data management, cloud computing, mobile devices - Block 2: Python programming and algorithms - Block 3: Security, hacking, surveillance',
@@ -108,7 +111,7 @@ export class AfStudyRecordComponent {
         },
       ],
       module_software: [
-        //af todo: add BlueJ
+        { title: 'BlueJ', author: 'Kölling M.', url: 'https://www.bluej.org/' },
       ],
       title: 'Object-oriented Java Programming',
       description:
@@ -148,6 +151,11 @@ export class AfStudyRecordComponent {
           author: 'The Open University',
           year: 2015,
           edition: 2,
+        },
+        {
+          title: 'Jupyter Project Documentation',
+          author: 'Project Jupyter',
+          url: 'https://docs.jupyter.org/en/latest/#',
         },
       ],
       module_software: [
@@ -229,6 +237,49 @@ export class AfStudyRecordComponent {
         },
       ],
       module_result: 'Grade 2 Pass',
+      module_resources: [
+        {
+          title: 'JavaScript The Definitive Guide',
+          author: 'Flanagan, D.',
+          url: 'https://www.oreilly.com/library/view/javascript-the-definitive/9781491952016/',
+        },
+        {
+          title: 'W3Schools Online Web Tutorials',
+          author: 'W3Schools',
+          url: 'https://www.w3schools.com/',
+        },
+        { title: 'Nielsen Norman Group', url: 'https://www.nngroup.com/' },
+        {
+          title: 'HTMl Standard',
+          author: 'WHATWG',
+          url: 'https://html.spec.whatwg.org/multipage/',
+        },
+        { title: 'PHP Documentation', url: 'https://www.php.net/docs.php' },
+      ],
+      module_software: [
+        {
+          title: 'Visual Studio Code',
+          author: 'Microsoft',
+          url: 'https://code.visualstudio.com/',
+        },
+        { title: 'regex101', url: 'https://regex101.com/' },
+        {
+          title: 'Pencil',
+          author: 'Pencil Project',
+          url: 'https://pencil.evolus.vn/Downloads.html',
+        },
+        { title: 'TortoiseSVN', url: 'https://tortoisesvn.net/' },
+        { title: 'Git', url: 'https://git-scm.com/' },
+        {
+          title: 'HTML Cleaner',
+          url: 'https://html-cleaner.com/',
+        },
+        {
+          title: 'Markup Validation Service',
+          author: 'w3.org',
+          url: 'https://validator.w3.org/',
+        },
+      ],
       title: 'Web Technologies',
       description: '',
       url: 'https://www.open.ac.uk/courses/modules/tt284',
