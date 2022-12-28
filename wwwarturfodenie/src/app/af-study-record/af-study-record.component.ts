@@ -167,7 +167,7 @@ export class AfStudyRecordComponent {
       ],
       title: 'Algorithms, Data Structures and Computability',
       description:
-        'Algorithms and complexity (Big-O notation), runtime analysis, data structures (lists, stacks, queues, dictionaries, sets, trees, graphs, search algorithms, recursion, greedy. Python and Jupyter Notebooks. Logic, computability (eg. P != NP, halting problem etc).',
+        'Algorithms and complexity (Big-O notation), runtime analysis, data structures (lists, stacks, queues, dictionaries, sets, trees, graphs, search algorithms, recursion, greedy. Python and Jupyter Notebooks. Logic, computability (eg. P != NP, halting problem etc). Content was covered through practical Python programming exercises and Notebooks projects.',
       url: 'https://www.open.ac.uk/courses/modules/m269',
       website_name: 'Website',
     },
@@ -281,7 +281,8 @@ export class AfStudyRecordComponent {
         },
       ],
       title: 'Web Technologies',
-      description: '',
+      description:
+        'Comprehensive web technology module from fundamentals (HTML, CSS, Standards) to topics such as accessibility, security, and architectures. Web APIs/HTTP/REST and programming languages (JavaScript and PHP) are covered in depth in different scenarios to show their use cases. ',
       url: 'https://www.open.ac.uk/courses/modules/tt284',
       website_name: 'Website',
     },
