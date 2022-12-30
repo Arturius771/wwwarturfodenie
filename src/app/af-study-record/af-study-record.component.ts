@@ -4,10 +4,10 @@ import { Module } from '../lib/model/module';
 // Example module:
 // tm111: Module = {
 //   module_code: 'TM111',
-//   assessments: [],
+//   assessments: [Assessment],
 //   module_result: 'Distinction',
-//   module_resources: [],
-//   module_software: [],
+//   module_resources: [Book],
+//   module_software: [Book],
 //   title: 'Introduction to Computing and Information Technology 1',
 //   description: 'IT fundamentals, programming, and networking.',
 //   url: 'https://www.open.ac.uk/courses/modules/tm111',
@@ -21,7 +21,7 @@ import { Module } from '../lib/model/module';
   styleUrls: ['./af-study-record.component.less'],
 })
 export class AfStudyRecordComponent {
-  modules: Array<Module> = [
+  bsc_modules: Array<Module> = [
     {
       module_code: 'TM111',
       module_result: 'Distinction',
@@ -282,9 +282,57 @@ export class AfStudyRecordComponent {
       ],
       title: 'Web Technologies',
       description:
-        'Comprehensive web technology module from fundamentals (HTML, CSS, Standards) to topics such as accessibility, security, and architectures. Web APIs/HTTP/REST and programming languages (JavaScript and PHP) are covered in depth in different scenarios to show their use cases. ',
+        'Comprehensive web technology module from fundamentals (HTML, CSS, Standards) to topics such as accessibility, security, and architectures. Web APIs/HTTP/REST and programming languages (JavaScript and PHP) are covered in depth in different scenarios to show their use cases (AJAX). ',
       url: 'https://www.open.ac.uk/courses/modules/tt284',
       website_name: 'Website',
+    },
+    {
+      module_code: 'TM351',
+      assessments: [],
+      module_result: '',
+      module_resources: [],
+      module_software: [],
+      title: 'Data management and analysis',
+      description: '',
+      url: 'https://www.open.ac.uk/courses/modules/tm351',
+      website_name: 'Website',
+      github: '',
+    },
+    {
+      module_code: 'TM354',
+      assessments: [],
+      module_result: '',
+      module_resources: [],
+      module_software: [],
+      title: 'Software Engineering',
+      description: '',
+      url: 'https://www.open.ac.uk/courses/modules/tm354',
+      website_name: 'Website',
+      github: '',
+    },
+    {
+      module_code: 'TM358',
+      assessments: [],
+      module_result: '',
+      module_resources: [],
+      module_software: [],
+      title: 'Machine Learning and Artificial Intelligence',
+      description: '',
+      url: 'https://www.open.ac.uk/courses/qualifications/details/tm358',
+      website_name: 'Website',
+      github: '',
+    },
+    {
+      module_code: 'TM470',
+      assessments: [],
+      module_result: '',
+      module_resources: [],
+      module_software: [],
+      title: 'The Computing and IT Project',
+      description: '',
+      url: 'https://www.open.ac.uk/courses/qualifications/details/tm470?orig=q62',
+      website_name: 'Website',
+      github: '',
     },
   ];
 }
