@@ -12,7 +12,7 @@ export class AfProjectsComponent {
     description:
       'A python math library that outputs formatted instructions on how to compute mathematical formulas and expressions. Wish I named it afmaf.',
     url: 'https://pypi.org/project/afmaths/#description',
-    website_name: 'pip install afmath',
+    website_name: 'pip install afmaths',
     github: '',
   };
   arturfodenie: Project = {
