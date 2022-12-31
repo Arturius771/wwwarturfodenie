@@ -18,7 +18,7 @@ export class AfProjectsComponent {
   arturfodenie: Project = {
     title: 'ArturFoden.ie',
     description:
-      'Personal website, currently it is an Angular SPA (previously PHP MPA) on an Apache webserver and MySQL database. Content changes according to current mood. Currently it is a portfolio website of sorts, but usually it is updated to implement something I find interesting.',
+      'Personal website, currently it is an Angular frontend SPA (previously PHP MPA) on an Apache webserver and MySQL database (Thinking of moving to MongoDB). Content changes according to current mood. Currently it is a portfolio website of sorts, but usually it is updated to implement something I find interesting.',
     url: 'https://pypi.org/project/afmaths/#description',
     website_name: 'Website',
     github: 'https://github.com/Arturius771/__wwwarturfodenie-website',

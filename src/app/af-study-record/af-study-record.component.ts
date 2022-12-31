@@ -282,7 +282,7 @@ export class AfStudyRecordComponent {
       ],
       title: 'Web Technologies',
       description:
-        'Comprehensive web technology module from fundamentals (HTML, CSS, Standards) to topics such as accessibility, security, and architectures. Web APIs/HTTP/REST and programming languages (JavaScript and PHP) are covered in depth in different scenarios to show their use cases (AJAX). ',
+        'Comprehensive web technology module from fundamentals (HTML, CSS, Standards) to topics such as accessibility, security, and architectures (Client-Server etc). Web APIs/HTTP/REST and programming languages (JavaScript and PHP - SPAs, SSGs, SSRs) are covered in depth in different scenarios to show their use cases (AJAX). ',
       url: 'https://www.open.ac.uk/courses/modules/tt284',
       website_name: 'Website',
     },
