@@ -359,7 +359,7 @@ export class AfStudyRecordComponent {
           url: 'https://netbeans.apache.org/',
         },
       ],
-      title: 'Diploma in Computer Programming with Java',
+      title: 'Introduction to Computer Programming',
       description:
         'Eleven week course on OOP fundamentals in Java. Skills such as development environment management, CLI compilation, and NetBeans IDE were taught. Computational problem solving and algorithms were introduced.',
       url: 'https://www.ibat.ie/courses/java-programming-diploma.html',
