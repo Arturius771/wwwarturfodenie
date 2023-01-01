@@ -12,11 +12,7 @@
 </ul>
 <h2>Courses</h2>
 <ul>
-  <h3>{{ ibat_modules[0].title }}</h3>
-  at
-  <a href="https://www.ibat.ie/courses/java-programming-diploma.html">IBAT</a
-  >:
-  <li *ngFor="let module of ibat_modules">
+  <li *ngFor="let module of course_modules">
     <app-af-university-projects-capsule
       [module]="module"
     ></app-af-university-projects-capsule>

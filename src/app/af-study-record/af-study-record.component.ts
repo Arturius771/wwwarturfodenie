@@ -26,7 +26,7 @@ export class AfStudyRecordComponent {
     {
       module_code: 'TM470',
       assessments: [],
-      module_result: 'Awaiting Result',
+      module_result: 'Ongoing',
       module_resources: [],
       module_software: [],
       title: 'The Computing and IT Project',
@@ -38,7 +38,7 @@ export class AfStudyRecordComponent {
     {
       module_code: 'TM358',
       assessments: [],
-      module_result: 'Awaiting Result',
+      module_result: 'Ongoing',
       module_resources: [],
       module_software: [],
       title: 'Machine Learning and Artificial Intelligence',
@@ -341,9 +341,9 @@ export class AfStudyRecordComponent {
       website_name: 'Website',
     },
   ];
-  ibat_modules: Array<Module> = [
+  course_modules: Array<Module> = [
     {
-      module_code: 'Professional Diploma',
+      module_code: 'IBAT Professional Diploma',
       assessments: [
         {
           assessment_title: 'Final Project',
@@ -363,6 +363,16 @@ export class AfStudyRecordComponent {
       description:
         'Eleven week course on OOP fundamentals in Java. Skills such as development environment management, CLI compilation, and NetBeans IDE were taught. Computational problem solving and algorithms were introduced.',
       url: 'https://www.ibat.ie/courses/java-programming-diploma.html',
+      website_name: 'Website',
+    },
+    {
+      module_code: 'Unity Learn Game Development',
+      assessments: [],
+      module_result: 'Ongoing',
+      module_software: [],
+      title: 'Junior Programmer Pathway',
+      description: '',
+      url: 'https://learn.unity.com/pathway/junior-programmer',
       website_name: 'Website',
     },
   ];
