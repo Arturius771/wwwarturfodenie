@@ -1,6 +1,6 @@
 const { MongoClient, ServerApiVersion } = require("mongodb");
 const uri =
-  "mongodb+srv://ArturFoden1:EjerVgMV4G2e@cluster0.xydbj.mongodb.net/?retryWrites=true&w=majority";
+  "mongodb+srv://ArturFoden1:password@cluster0.xydbj.mongodb.net/?retryWrites=true&w=majority";
 const client = new MongoClient(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
