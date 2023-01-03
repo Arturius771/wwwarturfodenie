@@ -3,16 +3,16 @@ import { Module } from '../lib/model/module';
 
 // Example module:
 // tm111: Module = {
+//   title: 'Introduction to Computing and Information Technology 1',
+//   description: 'IT fundamentals, programming, and networking.',
+//   url: 'https://www.open.ac.uk/courses/modules/tm111',
+//   github: '',
+//   website_name: 'Website',
 //   module_code: 'TM111',
 //   assessments: [Assessment],
 //   module_result: 'Distinction',
 //   module_resources: [Book],
 //   module_software: [Book],
-//   title: 'Introduction to Computing and Information Technology 1',
-//   description: 'IT fundamentals, programming, and networking.',
-//   url: 'https://www.open.ac.uk/courses/modules/tm111',
-//   website_name: 'Website',
-//   github: '',
 // };
 
 @Component({
@@ -24,42 +24,47 @@ export class AfStudyRecordComponent {
   msc_modules: Array<Module> = [];
   bsc_modules: Array<Module> = [
     {
-      module_code: 'TM470',
-      assessments: [],
-      module_result: 'Ongoing',
-      module_resources: [],
-      module_software: [],
       title: 'The Computing and IT Project',
       description: '',
       url: 'https://www.open.ac.uk/courses/qualifications/details/tm470?orig=q62',
       website_name: 'Website',
       github: '',
-    },
-    {
-      module_code: 'TM358',
+      module_code: 'TM470',
       assessments: [],
       module_result: 'Ongoing',
       module_resources: [],
       module_software: [],
+    },
+    {
       title: 'Machine Learning and Artificial Intelligence',
       description: '',
       url: 'https://www.open.ac.uk/courses/qualifications/details/tm358',
       website_name: 'Website',
       github: '',
-    },
-    {
-      module_code: 'TM354',
+      module_code: 'TM358',
       assessments: [],
-      module_result: 'Awaiting Result',
+      module_result: 'Ongoing',
       module_resources: [],
       module_software: [],
+    },
+    {
       title: 'Software Engineering',
       description: '',
       url: 'https://www.open.ac.uk/courses/modules/tm354',
       website_name: 'Website',
       github: '',
+      module_code: 'TM354',
+      assessments: [],
+      module_result: 'Awaiting Result',
+      module_resources: [],
+      module_software: [],
     },
     {
+      title: 'Data management and analysis',
+      description: '',
+      url: 'https://www.open.ac.uk/courses/modules/tm351',
+      website_name: 'Website',
+      github: '',
       module_code: 'TM351',
       assessments: [],
       module_result: 'Awaiting Result',
@@ -70,11 +75,6 @@ export class AfStudyRecordComponent {
         { title: 'Docker' },
         { title: 'Jupyter' },
       ],
-      title: 'Data management and analysis',
-      description: '',
-      url: 'https://www.open.ac.uk/courses/modules/tm351',
-      website_name: 'Website',
-      github: '',
     },
     {
       module_code: 'TT284',
@@ -192,6 +192,11 @@ export class AfStudyRecordComponent {
       website_name: 'Website',
     },
     {
+      title: 'Algorithms, Data Structures and Computability',
+      description:
+        'Algorithms and complexity (Big-O notation), runtime analysis, data structures (lists, stacks, queues, dictionaries, sets, trees, graphs, search algorithms, recursion, greedy. Python and Jupyter Notebooks. Logic, computability (eg. P != NP, halting problem etc). Content was covered through practical Python programming exercises and Notebooks projects.',
+      url: 'https://www.open.ac.uk/courses/modules/m269',
+      website_name: 'Website',
       module_code: 'M269',
       assessments: [
         {
@@ -237,13 +242,13 @@ export class AfStudyRecordComponent {
           url: 'https://www.anaconda.com/',
         },
       ],
-      title: 'Algorithms, Data Structures and Computability',
-      description:
-        'Algorithms and complexity (Big-O notation), runtime analysis, data structures (lists, stacks, queues, dictionaries, sets, trees, graphs, search algorithms, recursion, greedy. Python and Jupyter Notebooks. Logic, computability (eg. P != NP, halting problem etc). Content was covered through practical Python programming exercises and Notebooks projects.',
-      url: 'https://www.open.ac.uk/courses/modules/m269',
-      website_name: 'Website',
     },
     {
+      title: 'Object-oriented Java Programming',
+      description:
+        'Fundamentals of object-oriented programming taught with the BlueJ IDE and Java.',
+      url: 'https://www.open.ac.uk/courses/modules/m250',
+      website_name: 'Website',
       module_code: 'M250',
       assessments: [
         {
@@ -281,13 +286,11 @@ export class AfStudyRecordComponent {
       module_software: [
         { title: 'BlueJ', author: 'Kölling M.', url: 'https://www.bluej.org/' },
       ],
-      title: 'Object-oriented Java Programming',
-      description:
-        'Fundamentals of object-oriented programming taught with the BlueJ IDE and Java.',
-      url: 'https://www.open.ac.uk/courses/modules/m250',
-      website_name: 'Website',
     },
     {
+      title: 'Discovering Mathematics',
+      description: '',
+      website_name: 'Website',
       module_code: 'MU123',
       module_result: 'Distinction',
       module_resources: [
@@ -296,11 +299,13 @@ export class AfStudyRecordComponent {
           author: 'Various Authors',
         },
       ],
-      title: 'Discovering Mathematics',
-      description: '',
-      website_name: 'Website',
     },
     {
+      title: 'Technologies in Practise',
+      description:
+        'Networking, operating systems (Linux, architectures and virtualisation), robotics and AI',
+      url: 'https://www.open.ac.uk/courses/modules/tm129',
+      website_name: 'Website',
       module_code: 'TM129',
       module_result: 'Grade 2 Pass',
       module_resources: [
@@ -311,13 +316,13 @@ export class AfStudyRecordComponent {
         },
         { title: 'I, Robot', author: 'Asimov, I.', year: 1967 },
       ],
-      title: 'Technologies in Practise',
-      description:
-        'Networking, operating systems (Linux, architectures and virtualisation), robotics and AI',
-      url: 'https://www.open.ac.uk/courses/modules/tm129',
-      website_name: 'Website',
     },
     {
+      title: 'Introduction to Computing and Information Technology 2',
+      description:
+        'Block 1: Computer hardware and architecture, data management, cloud computing, mobile devices - Block 2: Python programming and algorithms - Block 3: Security, hacking, surveillance',
+      url: 'https://www.open.ac.uk/courses/modules/tm112',
+      website_name: 'Website',
       module_code: 'TM112',
       module_result: 'Distinction',
       module_resources: [
@@ -326,24 +331,24 @@ export class AfStudyRecordComponent {
       module_software: [
         { title: 'Python 3.8', url: 'https://www.python.org/' },
       ],
-      title: 'Introduction to Computing and Information Technology 2',
-      description:
-        'Block 1: Computer hardware and architecture, data management, cloud computing, mobile devices - Block 2: Python programming and algorithms - Block 3: Security, hacking, surveillance',
-      url: 'https://www.open.ac.uk/courses/modules/tm112',
-      website_name: 'Website',
     },
     {
-      module_code: 'TM111',
-      module_result: 'Distinction',
       title: 'Introduction to Computing and Information Technology 1',
       description: 'IT fundamentals, programming, and networking.',
       url: 'https://www.open.ac.uk/courses/modules/tm111',
       website_name: 'Website',
+      module_code: 'TM111',
+      module_result: 'Distinction',
     },
   ];
   course_modules: Array<Module> = [
     {
-      module_code: 'IBAT Professional Diploma',
+      title: 'Diploma in Computer Programming',
+      description:
+        'Eleven week course on OOP fundamentals in Java. Skills such as development environment management, CLI compilation, and NetBeans IDE were taught. Computational problem solving and algorithms were introduced.',
+      url: 'https://www.ibat.ie/courses/java-programming-diploma.html',
+      website_name: 'Website',
+      module_code: 'IBAT',
       assessments: [
         {
           assessment_title: 'Final Project',
@@ -359,21 +364,16 @@ export class AfStudyRecordComponent {
           url: 'https://netbeans.apache.org/',
         },
       ],
-      title: 'Introduction to Computer Programming',
-      description:
-        'Eleven week course on OOP fundamentals in Java. Skills such as development environment management, CLI compilation, and NetBeans IDE were taught. Computational problem solving and algorithms were introduced.',
-      url: 'https://www.ibat.ie/courses/java-programming-diploma.html',
-      website_name: 'Website',
     },
     {
-      module_code: 'Unity Learn Game Development',
-      assessments: [],
-      module_result: 'Ongoing',
-      module_software: [],
       title: 'Junior Programmer Pathway',
       description: '',
       url: 'https://learn.unity.com/pathway/junior-programmer',
       website_name: 'Website',
+      module_code: 'Unity Learn Game Development',
+      assessments: [],
+      module_result: 'Ongoing',
+      module_software: [],
     },
   ];
 }
