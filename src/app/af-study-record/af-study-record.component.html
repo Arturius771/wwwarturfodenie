@@ -1,20 +1,9 @@
-<h2>University Modules</h2>
-<ul>
-  <h3>Computing and IT BSc</h3>
-  at
-  <a href="https://www.open.ac.uk/">The Open University</a
-  >:
-  <li *ngFor="let module of bsc_modules">
-    <app-af-university-projects-capsule
-      [module]="module"
-    ></app-af-university-projects-capsule>
-  </li>
-</ul>
-<h2>Courses</h2>
-<ul>
-  <li *ngFor="let module of course_modules">
-    <app-af-university-projects-capsule
-      [module]="module"
-    ></app-af-university-projects-capsule>
-  </li>
-</ul>
+<app-af-university-projects-capsule
+  [course]="computing_it_course"
+></app-af-university-projects-capsule>
+<app-af-university-projects-capsule
+  [course]="ibat_course"
+></app-af-university-projects-capsule>
+<app-af-university-projects-capsule
+  [course]="unity_course"
+></app-af-university-projects-capsule>

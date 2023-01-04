@@ -1,42 +1,57 @@
-<div>
-  <p class="module_code" *ngIf="module.module_code">{{ module.module_code }}</p>
-  <p class="title" *ngIf="module.title">{{ module.title }}</p>
-</div>
-<a *ngIf="module.github" [href]="module.github">GitHub</a>
-<a *ngIf="module.url" [href]="module.url">{{ module.website_name }}</a>
-<div class="grid">
-  <ul>
-    <p>
-      <u *ngIf="module.module_result">Module Result:</u>
-      <li>{{ module.module_result }}</li>
-    </p>
-  </ul>
-  <ul>
-    <p>
-      <u *ngIf="module.module_resources">Resources:</u>
-      <li *ngFor="let resource of module.module_resources">
-        <app-af-resource [resource]="resource"></app-af-resource>
-      </li>
-    </p>
-  </ul>
-  <ul>
-    <p>
-      <u *ngIf="module.assessments">Projects:</u>
-      <li *ngFor="let assessment of module.assessments">
-        <app-af-toggle-button
-          [title]="assessment.assessment_title"
-          [content]="assessment.description"
-        ></app-af-toggle-button>
-      </li>
-    </p>
-  </ul>
-  <ul>
-    <p>
-      <u *ngIf="module.module_software">Software:</u>
-      <li *ngFor="let resource of module.module_software">
-        <app-af-resource [resource]="resource"></app-af-resource>
-      </li>
-    </p>
-  </ul>
-</div>
-<p *ngIf="module.description">{{ module.description }}</p>
+<h3>{{ course.name }}</h3>
+at
+<a [href]="course.website">{{ course.institution }}</a
+>:
+<ul>
+  <li *ngFor="let module of course.modules">
+    <div>
+      <p class="module_code" *ngIf="module.module_code">
+        {{ module.module_code }}
+      </p>
+      <p class="title" *ngIf="module.title && module.module_code">
+        {{ module.title }}
+      </p>
+      <p class="module_code" *ngIf="module.title && !module.module_code">
+        {{ module.title }}
+      </p>
+    </div>
+    <a *ngIf="module.github" [href]="module.github">GitHub</a>
+    <a *ngIf="module.url" [href]="module.url">{{ module.website_name }}</a>
+    <div class="grid">
+      <ul>
+        <p>
+          <u *ngIf="module.module_result">Module Result:</u>
+          <li>{{ module.module_result }}</li>
+        </p>
+      </ul>
+      <ul>
+        <p>
+          <u *ngIf="module.module_resources">Resources:</u>
+          <li *ngFor="let resource of module.module_resources">
+            <app-af-resource [resource]="resource"></app-af-resource>
+          </li>
+        </p>
+      </ul>
+      <ul>
+        <p>
+          <u *ngIf="module.assessments">Projects:</u>
+          <li *ngFor="let assessment of module.assessments">
+            <app-af-toggle-button
+              [title]="assessment.assessment_title"
+              [content]="assessment.description"
+            ></app-af-toggle-button>
+          </li>
+        </p>
+      </ul>
+      <ul>
+        <p>
+          <u *ngIf="module.module_software">Software:</u>
+          <li *ngFor="let resource of module.module_software">
+            <app-af-resource [resource]="resource"></app-af-resource>
+          </li>
+        </p>
+      </ul>
+    </div>
+    <p *ngIf="module.description">{{ module.description }}</p>
+  </li>
+</ul>
