@@ -26,7 +26,7 @@ export class AfProjectsComponent {
   akamai: Project = {
     title: 'Akamai Frontend',
     description:
-      'Worked on this project during my internship. Frontend project for an Angular SPA SaaS product.',
+      'Worked on this project during my internship. Frontend project for an Angular SPA SaaS product. Took on duties such as sprint managers, release engineer, and upgrade engineer in addition to fixing bugs and implementing features in an Agile environment.',
     url: 'https://pypi.org/project/afmaths/#description',
     website_name: 'Website',
   };
