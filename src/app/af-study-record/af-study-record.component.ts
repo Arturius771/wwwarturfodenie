@@ -43,7 +43,8 @@ export class AfStudyRecordComponent {
       },
       {
         title: 'Machine Learning and Artificial Intelligence',
-        description: '',
+        description:
+          'Comprehensive AI and ML module with blocks on Artificial Neural Networks, Convolutional Neural Networks, Recurrent Neural Networks, Autoencoders, model analysis and application, as well as ethical issues.',
         url: 'https://www.open.ac.uk/courses/qualifications/details/tm358',
         website_name: 'Website',
         github: '',
