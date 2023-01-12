@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-af-footer',
-  templateUrl: './af-footer.component.html',
-  styleUrls: ['./af-footer.component.less'],
+  selector: 'app-footer',
+  templateUrl: './footer.component.html',
+  styleUrls: ['./footer.component.less'],
 })
-export class AfFooterComponent {
+export class FooterComponent {
   year = getYear();
 }
 

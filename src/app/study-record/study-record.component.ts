@@ -16,11 +16,11 @@ import { Course } from '../lib/model/course';
 // };
 
 @Component({
-  selector: 'app-af-study-record',
-  templateUrl: './af-study-record.component.html',
-  styleUrls: ['./af-study-record.component.less'],
+  selector: 'app-study-record',
+  templateUrl: './study-record.component.html',
+  styleUrls: ['./study-record.component.less'],
 })
-export class AfStudyRecordComponent {
+export class StudyRecordComponent {
   computing_it_course: Course = {
     name: 'Computing and IT BSc',
     institution: 'The Open University',

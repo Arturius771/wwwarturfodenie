@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { Project } from '../lib/model/project';
 
 @Component({
-  selector: 'app-af-projects',
-  templateUrl: './af-projects.component.html',
-  styleUrls: ['./af-projects.component.less'],
+  selector: 'app-projects',
+  templateUrl: './projects.component.html',
+  styleUrls: ['./projects.component.less'],
 })
-export class AfProjectsComponent {
+export class ProjectsComponent {
   afmaths: Project = {
     title: 'afmaths',
     description:
