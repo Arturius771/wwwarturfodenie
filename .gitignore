@@ -2,6 +2,7 @@
 
 package-lock.json
 *.pem
+afdbtoken.js
 
 # Compiled output
 /dist
