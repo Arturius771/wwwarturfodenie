@@ -20,7 +20,7 @@ mongoose.connect(token, (err) => {
   }
 });
 
-router.get("/", (req, res) => {
+router.get("/", (res) => {
   res.send("From API route");
 });
 
@@ -34,6 +34,31 @@ router.post("/register", (req, res) => {
       res.status(200).send(registeredUser);
     }
   });
+});
+
+router.post("/login", (req, res) => {
+  let userData = req.body;
+
+  User.findOne({ email: userData.email }, (err, user) => {
+    if (err) {
+      console.log(error);
+    } else {
+      if (!user) {
+        res.status(401).send("Invalid email");
+      } else {
+        if (user.password !== userData.password) {
+          res.status(401).send("Invalid password");
+        } else {
+          res.status(200).send(user);
+        }
+      }
+    }
+  });
+});
+
+router.get("/gettest", (res) => {
+  let response = [{ a: "a" }];
+  res.json(response);
 });
 
 module.exports = router;
