@@ -334,6 +334,16 @@ export class StudyRecordComponent {
             author: 'Oracle',
             url: 'https://www.virtualbox.org/',
           },
+          {
+            title: 'RobotLab',
+            author: 'The Open University',
+            url: 'https://github.com/ouseful-course-containers/ou-tm129-robotlab',
+          },
+          {
+            title: 'NeuralNet',
+            author: 'The Open University',
+            url: 'https://github.com/ouseful-course-containers/ou-tm129-robotlab',
+          },
         ],
       },
       {
