@@ -7,7 +7,7 @@ import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
   styleUrls: ['./af-image.component.less'],
 })
 export class AfImageComponent implements OnInit {
-  @Input() imageSource: any;
+  @Input() imageSrc: any;
   @ViewChild('intersect')
   intersect!: ElementRef;
   @ViewChild('progress')
@@ -27,9 +27,7 @@ export class AfImageComponent implements OnInit {
       let entry = entries[i];
       if (entry.isIntersecting && entry.target.className === 'intersect') {
         entry.target.querySelector('.lds-ring').className = 'hidden';
-        this.progress.nativeElement.className = 'progress';
         let imgSrc = this.imageEl.nativeElement.getAttribute('data-imagesrc');
-
         this.http
           .get(imgSrc, {
             responseType: 'blob',
@@ -38,20 +36,16 @@ export class AfImageComponent implements OnInit {
             headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
           })
           .subscribe((event) => {
-            if (event.type === HttpEventType.DownloadProgress) {
-              const percentage = (100 / event.total!) * event.loaded;
-              this.progress.nativeElement.value = percentage;
-            }
-
             if (event.type === HttpEventType.Response) {
-              entry.target.className = 'hidden';
-              this.imageEl.nativeElement.src = window.URL.createObjectURL(
-                event.body!
-              );
-              this.imageEl.nativeElement.className = '';
+              if (event.status !== 404) {
+                entry.target.className = 'hidden';
+                this.imageEl.nativeElement.src = window.URL.createObjectURL(
+                  event.body!
+                );
+                this.imageEl.nativeElement.className = '';
+              }
             }
           });
-
         observer.unobserve(entry.target);
       }
     }
