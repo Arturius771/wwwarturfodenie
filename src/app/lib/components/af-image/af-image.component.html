@@ -1,0 +1,13 @@
+<div class="container">
+  <div #intersect class="intersect">
+    <div class="lds-ring">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <progress #progress value="0" max="100" class="hidden"></progress>
+    </div>
+  </div>
+</div>
+
+<img #imageEl [attr.data-imageSrc]="imageSource" alt="" />

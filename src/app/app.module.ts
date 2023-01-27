@@ -15,6 +15,8 @@ import { AfToggleButtonComponent } from './lib/components/af-toggle-button/af-to
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { AfResourceComponent } from './lib/components/af-resource/af-resource.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { AfImageComponent } from './lib/components/af-image/af-image.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -30,9 +32,11 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     AfToggleButtonComponent,
     LandingPageComponent,
     AfResourceComponent,
+    AfImageComponent,
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     RouterModule.forRoot([
       { path: 'home', component: LandingPageComponent },
