@@ -1,12 +1,12 @@
 import { HttpClient, HttpEventType, HttpHeaders } from '@angular/common/http';
-import { Component, ElementRef, Input, ViewChild } from '@angular/core';
+import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-af-image',
   templateUrl: './af-image.component.html',
   styleUrls: ['./af-image.component.less'],
 })
-export class AfImageComponent {
+export class AfImageComponent implements OnInit {
   @Input() imageSource: any;
   @ViewChild('intersect')
   intersect!: ElementRef;
@@ -25,10 +25,7 @@ export class AfImageComponent {
   ) {
     for (let i = 0; i < entries.length; i++) {
       let entry = entries[i];
-      if (
-        entry.isIntersecting &&
-        entry.target.className === 'intersectContainer'
-      ) {
+      if (entry.isIntersecting && entry.target.className === 'intersect') {
         entry.target.querySelector('.lds-ring').className = 'hidden';
         this.progress.nativeElement.className = 'progress';
         let imgSrc = this.imageEl.nativeElement.getAttribute('data-imagesrc');
@@ -60,12 +57,13 @@ export class AfImageComponent {
     }
   }
 
-  ngAfterViewInit(): void {
+  ngAfterViewInit() {
     let options = {
       root: null,
-      rootMargine: '0px',
+      rootMargin: '0px',
       threshold: 1,
     };
+
     let observer = new IntersectionObserver(
       this.observerCallback.bind(this),
       options
