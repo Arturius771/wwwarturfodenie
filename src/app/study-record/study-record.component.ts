@@ -56,15 +56,25 @@ export class StudyRecordComponent {
       },
       {
         title: 'Software Engineering',
-        description: '',
+        description:
+          'Software system development as an engineering activity, modelling software systems (UML), Agile and non-Agile approaches, requirements engineering (functional/non-functional types, relationship between requirements and testing), use case models, business domain modelling, structural modelling (conceptual models and object/class models, relationships/associations, constraints/invariants), dynamic modelling, software architectures, design patterns, quality requirements.',
         url: 'https://www.open.ac.uk/courses/modules/tm354',
         website_name: 'Website',
         github: '',
         module_code: 'TM354',
-        assessments: [],
+        assessments: [
+          {
+            assessment_title: 'TMA01',
+            description:
+              'Use case models and user stories, activity diagrams, agile methodologies, Volere templates.',
+          },
+        ],
         module_result: 'Awaiting Result',
         module_resources: [],
-        module_software: [{ title: 'diagrams.net' }],
+        module_software: [
+          { title: 'diagrams.net' },
+          { title: 'UMLet', url: 'https://www.umlet.com/' },
+        ],
       },
       {
         title: 'Data management and analysis',
