@@ -1,6 +1,6 @@
-<h3>{{ course.name }}</h3>
+<h3>{{ course.title }}</h3>
 at
-<a [href]="course.website">{{ course.institution }}</a
+<a [href]="course.url">{{ course.institution }}</a
 >:
 <ul>
   <li *ngFor="let module of course.modules">

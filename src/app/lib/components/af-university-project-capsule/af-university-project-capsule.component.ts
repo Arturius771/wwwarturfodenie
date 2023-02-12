@@ -1,6 +1,5 @@
-import { AfProjectCapsuleComponent } from '../af-project-capsule/af-project-capsule.component';
+import { Project } from '../../model/project';
 import { Component, Input } from '@angular/core';
-import { Course } from '../../model/course';
 
 @Component({
   selector: 'app-af-university-projects-capsule',
@@ -8,5 +7,5 @@ import { Course } from '../../model/course';
   styleUrls: ['./af-university-project-capsule.component.less'],
 })
 export class AfUniversityProjectCapsuleComponent {
-  @Input() course!: Course;
+  @Input() course!: Project;
 }

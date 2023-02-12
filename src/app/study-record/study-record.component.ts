@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Course } from '../lib/model/course';
+import { Project } from '../lib/model/project';
 
 // Example module:
 // tm111: Module = {
@@ -21,10 +21,10 @@ import { Course } from '../lib/model/course';
   styleUrls: ['./study-record.component.less'],
 })
 export class StudyRecordComponent {
-  computing_it_course: Course = {
-    name: 'Computing and IT BSc',
+  computing_it_course: Project = {
+    title: 'Computing and IT BSc',
     institution: 'The Open University',
-    website: 'https://www.open.ac.uk/',
+    url: 'https://www.open.ac.uk/',
     modules: [
       {
         title: 'The Computing and IT Project',
@@ -383,11 +383,13 @@ export class StudyRecordComponent {
         module_result: 'Distinction',
       },
     ],
+    description: '',
+    website_name: '',
   };
-  ibat_course: Course = {
-    name: 'Diploma in Computer Programming',
+  ibat_course: Project = {
+    title: 'Diploma in Computer Programming',
     institution: 'IBAT',
-    website: 'https://www.ibat.ie/',
+    url: 'https://www.ibat.ie/',
     modules: [
       {
         title: 'Diploma in Computer Programming',
@@ -413,16 +415,18 @@ export class StudyRecordComponent {
       },
     ],
   };
-  unity_course: Course = {
-    name: 'Unity Learn',
+  unity_course: Project = {
+    title: 'Unity Learn',
     institution: 'Unity',
-    website: 'https://learn.unity.com/',
+    url: 'https://learn.unity.com/',
     modules: [
       {
         title: 'Junior Programmer Pathway',
         description: '',
-        url: 'https://learn.unity.com/pathway/junior-programmer',
-        website_name: 'Website',
+        url: {
+          url: 'https://learn.unity.com/pathway/junior-programmer',
+          website_name: 'Website',
+        },
         assessments: [],
         module_result: 'Ongoing',
         module_software: [],
