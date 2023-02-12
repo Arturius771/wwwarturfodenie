@@ -7,6 +7,6 @@ import { Course } from '../../model/course';
   templateUrl: './af-university-project-capsule.component.html',
   styleUrls: ['./af-university-project-capsule.component.less'],
 })
-export class AfUniversityProjectCapsuleComponent extends AfProjectCapsuleComponent {
+export class AfUniversityProjectCapsuleComponent {
   @Input() course!: Course;
 }
