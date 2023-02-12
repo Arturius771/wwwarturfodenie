@@ -1,4 +1,6 @@
 <h2>{{ project.title }}</h2>
-<a *ngIf="project.github" href="{{ project.github }}">GitHub</a>
-<a *ngIf="project.url" [href]="project.url">{{ project.website_name }}</a>
+<a *ngIf="project.github" href="{{ project.github.url }}">GitHub</a>
+<a *ngIf="project.link" [href]="project.link.url">{{
+  project.link.website_name
+}}</a>
 <p *ngIf="project.description">{{ project.description }}</p>

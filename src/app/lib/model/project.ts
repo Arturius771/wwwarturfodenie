@@ -1,11 +1,8 @@
-import { Module } from './module';
-import { Url } from './url';
+import { WebsiteLink } from './website-link';
 
 export interface Project {
   title: string;
   description?: string;
-  url?: Url;
-  github?: string;
-  institution?: string;
-  modules?: Array<Module>;
+  link?: WebsiteLink;
+  github?: WebsiteLink;
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Course } from '../lib/model/course';
 import { Project } from '../lib/model/project';
 
 // Example module:
@@ -21,21 +22,20 @@ import { Project } from '../lib/model/project';
   styleUrls: ['./study-record.component.less'],
 })
 export class StudyRecordComponent {
-  computing_it_course: Project = {
+  computing_it_course: Course = {
     title: 'Computing and IT BSc',
     institution: 'The Open University',
-    url: 'https://www.open.ac.uk/',
+    link: { url: 'https://www.open.ac.uk/', website_name: '' },
     modules: [
       {
         title: 'The Computing and IT Project',
         description: '',
-        url: 'https://www.open.ac.uk/courses/qualifications/details/tm470?orig=q62',
-        website_name: 'Website',
-        github: '',
+        link: {
+          url: 'https://www.open.ac.uk/courses/qualifications/details/tm470?orig=q62',
+          website_name: 'Website',
+        },
         module_code: 'TM470',
-        assessments: [],
         module_result: 'Ongoing',
-        module_resources: [],
         module_software: [
           { title: 'Azure DevOps' },
           { title: 'Git', url: 'https://git-scm.com/' },
@@ -45,22 +45,22 @@ export class StudyRecordComponent {
         title: 'Machine Learning and Artificial Intelligence',
         description:
           'Comprehensive AI and ML module with blocks on Artificial Neural Networks, Convolutional Neural Networks, Recurrent Neural Networks, Autoencoders, model analysis and application, as well as ethical issues.',
-        url: 'https://www.open.ac.uk/courses/qualifications/details/tm358',
-        website_name: 'Website',
-        github: '',
+        link: {
+          url: 'https://www.open.ac.uk/courses/qualifications/details/tm358',
+          website_name: 'Website',
+        },
         module_code: 'TM358',
-        assessments: [],
         module_result: 'Ongoing',
-        module_resources: [],
         module_software: [{ title: 'TensorFlow' }],
       },
       {
         title: 'Software Engineering',
         description:
           'Software system development as an engineering activity, modelling software systems (UML), Agile and non-Agile approaches, requirements engineering (functional/non-functional types, relationship between requirements and testing), use case models, business domain modelling, structural modelling (conceptual models and object/class models, relationships/associations, constraints/invariants), dynamic modelling, software architectures, design patterns, quality requirements.',
-        url: 'https://www.open.ac.uk/courses/modules/tm354',
-        website_name: 'Website',
-        github: '',
+        link: {
+          url: 'https://www.open.ac.uk/courses/modules/tm354',
+          website_name: 'Website',
+        },
         module_code: 'TM354',
         assessments: [
           {
@@ -70,7 +70,6 @@ export class StudyRecordComponent {
           },
         ],
         module_result: 'Awaiting Result',
-        module_resources: [],
         module_software: [
           { title: 'diagrams.net' },
           { title: 'UMLet', url: 'https://www.umlet.com/' },
@@ -79,13 +78,12 @@ export class StudyRecordComponent {
       {
         title: 'Data management and analysis',
         description: '',
-        url: 'https://www.open.ac.uk/courses/modules/tm351',
-        website_name: 'Website',
-        github: '',
+        link: {
+          url: 'https://www.open.ac.uk/courses/modules/tm351',
+          website_name: 'Website',
+        },
         module_code: 'TM351',
-        assessments: [],
         module_result: 'Awaiting Result',
-        module_resources: [],
         module_software: [
           { title: 'PostgreSQL' },
           { title: 'MongoDB' },
@@ -164,8 +162,10 @@ export class StudyRecordComponent {
         title: 'Web Technologies',
         description:
           'Comprehensive web technology module from fundamentals (HTML, CSS, Standards) to topics such as accessibility, security, and architectures (Client-Server etc). Web APIs/HTTP/REST and programming languages (JavaScript and PHP - SPAs, SSGs, SSRs) are covered in depth in different scenarios to show their use cases (AJAX). ',
-        url: 'https://www.open.ac.uk/courses/modules/tt284',
-        website_name: 'Website',
+        link: {
+          url: 'https://www.open.ac.uk/courses/modules/tt284',
+          website_name: 'Website',
+        },
       },
       {
         module_code: 'TM255',
@@ -206,15 +206,19 @@ export class StudyRecordComponent {
         title: 'Communication and Information Technologies',
         description:
           'General networking and communications module. Security, cryptography, IoT, WiFi/Cell networks, interaction and collaboration, virtualisation.',
-        url: 'https://www.open.ac.uk/courses/modules/tm255',
-        website_name: 'Website',
+        link: {
+          url: 'https://www.open.ac.uk/courses/modules/tm255',
+          website_name: 'Website',
+        },
       },
       {
         title: 'Algorithms, Data Structures and Computability',
         description:
           'Algorithms and complexity (Big-O notation), runtime analysis, data structures (lists, stacks, queues, dictionaries, sets, trees, graphs, search algorithms, recursion, greedy. Python and Jupyter Notebooks. Logic, computability (eg. P != NP, halting problem etc). Content was covered through practical Python programming exercises and Notebooks projects.',
-        url: 'https://www.open.ac.uk/courses/modules/m269',
-        website_name: 'Website',
+        link: {
+          url: 'https://www.open.ac.uk/courses/modules/m269',
+          website_name: 'Website',
+        },
         module_code: 'M269',
         assessments: [
           {
@@ -265,8 +269,10 @@ export class StudyRecordComponent {
         title: 'Object-oriented Java Programming',
         description:
           'Fundamentals of object-oriented programming taught with the BlueJ IDE and Java.',
-        url: 'https://www.open.ac.uk/courses/modules/m250',
-        website_name: 'Website',
+        link: {
+          url: 'https://www.open.ac.uk/courses/modules/m250',
+          website_name: 'Website',
+        },
         module_code: 'M250',
         assessments: [
           {
@@ -312,7 +318,6 @@ export class StudyRecordComponent {
       {
         title: 'Discovering Mathematics',
         description: '',
-        website_name: 'Website',
         module_code: 'MU123',
         module_result: 'Distinction',
         module_resources: [
@@ -326,8 +331,10 @@ export class StudyRecordComponent {
         title: 'Technologies in Practise',
         description:
           'Networking, operating systems (Linux, architectures and virtualisation), robotics and AI',
-        url: 'https://www.open.ac.uk/courses/modules/tm129',
-        website_name: 'Website',
+        link: {
+          url: 'https://www.open.ac.uk/courses/modules/tm129',
+          website_name: 'Website',
+        },
         module_code: 'TM129',
         module_result: 'Grade 2 Pass',
         module_resources: [
@@ -360,8 +367,10 @@ export class StudyRecordComponent {
         title: 'Introduction to Computing and Information Technology 2',
         description:
           'Block 1: Computer hardware and architecture, data management, cloud computing, mobile devices - Block 2: Python programming and algorithms - Block 3: Security, hacking, surveillance',
-        url: 'https://www.open.ac.uk/courses/modules/tm112',
-        website_name: 'Website',
+        link: {
+          url: 'https://www.open.ac.uk/courses/modules/tm112',
+          website_name: 'Website',
+        },
         module_code: 'TM112',
         module_result: 'Distinction',
         module_resources: [
@@ -377,26 +386,28 @@ export class StudyRecordComponent {
       {
         title: 'Introduction to Computing and Information Technology 1',
         description: 'IT fundamentals, programming, and networking.',
-        url: 'https://www.open.ac.uk/courses/modules/tm111',
-        website_name: 'Website',
+        link: {
+          url: 'https://www.open.ac.uk/courses/modules/tm111',
+          website_name: 'Website',
+        },
         module_code: 'TM111',
         module_result: 'Distinction',
       },
     ],
-    description: '',
-    website_name: '',
   };
-  ibat_course: Project = {
+  ibat_course: Course = {
     title: 'Diploma in Computer Programming',
     institution: 'IBAT',
-    url: 'https://www.ibat.ie/',
+    link: { url: 'https://www.ibat.ie/', website_name: 'WebSite' },
     modules: [
       {
         title: 'Diploma in Computer Programming',
         description:
           'Eleven week course on OOP fundamentals in Java. Skills such as development environment management, CLI compilation, and NetBeans IDE were taught. Computational problem solving and algorithms were introduced.',
-        url: 'https://www.ibat.ie/courses/java-programming-diploma.html',
-        website_name: 'Website',
+        link: {
+          url: 'https://www.ibat.ie/courses/java-programming-diploma.html',
+          website_name: 'Website',
+        },
         assessments: [
           {
             assessment_title: 'Final Project',
@@ -415,21 +426,19 @@ export class StudyRecordComponent {
       },
     ],
   };
-  unity_course: Project = {
+  unity_course: Course = {
     title: 'Unity Learn',
     institution: 'Unity',
-    url: 'https://learn.unity.com/',
+    link: { url: 'https://learn.unity.com/', website_name: 'Website' },
     modules: [
       {
         title: 'Junior Programmer Pathway',
         description: '',
-        url: {
+        link: {
           url: 'https://learn.unity.com/pathway/junior-programmer',
           website_name: 'Website',
         },
-        assessments: [],
         module_result: 'Ongoing',
-        module_software: [],
       },
     ],
   };
