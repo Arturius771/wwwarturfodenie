@@ -1,5 +1,4 @@
 import { Module } from './module';
-import { Project } from './project';
 import { WebsiteLink } from './website-link';
 
 export interface Course {
