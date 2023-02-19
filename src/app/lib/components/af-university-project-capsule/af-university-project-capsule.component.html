@@ -1,6 +1,6 @@
 <h3>{{ course.title }}</h3>
 at
-<a [href]="course.link">{{ course.institution }}</a
+<a [href]="course.link.url">{{ course.institution }}</a
 >:
 <ul>
   <li *ngFor="let module of course.modules">
@@ -15,28 +15,31 @@ at
         {{ module.title }}
       </p>
     </div>
-    <a *ngIf="module.github" [href]="module.github">GitHub</a>
+    <a *ngIf="module.github" [href]="module.github.url">{{
+      module.github.website_name
+    }}</a>
     <a *ngIf="module.link" [href]="module.link.url">{{
       module.link.website_name
     }}</a>
+    <p *ngIf="module.description">{{ module.description }}</p>
     <div class="grid">
       <ul>
-        <p>
-          <u *ngIf="module.module_result">Module Result:</u>
+        <p *ngIf="module.module_result">
+          <u>Module Result:</u>
           <li>{{ module.module_result }}</li>
         </p>
       </ul>
       <ul>
-        <p>
-          <u *ngIf="module.module_resources">Resources:</u>
+        <p *ngIf="module.module_resources">
+          <u>Resources:</u>
           <li *ngFor="let resource of module.module_resources">
             <app-af-resource [resource]="resource"></app-af-resource>
           </li>
         </p>
       </ul>
       <ul>
-        <p>
-          <u *ngIf="module.assessments">Projects:</u>
+        <p *ngIf="module.assessments">
+          <u>Projects:</u>
           <li *ngFor="let assessment of module.assessments">
             <app-af-toggle-button
               [title]="assessment.assessment_title"
@@ -46,14 +49,13 @@ at
         </p>
       </ul>
       <ul>
-        <p>
-          <u *ngIf="module.module_software">Software:</u>
+        <p *ngIf="module.module_software">
+          <u>Software:</u>
           <li *ngFor="let resource of module.module_software">
             <app-af-resource [resource]="resource"></app-af-resource>
           </li>
         </p>
       </ul>
     </div>
-    <p *ngIf="module.description">{{ module.description }}</p>
   </li>
 </ul>

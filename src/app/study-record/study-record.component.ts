@@ -129,7 +129,7 @@ export class StudyRecordComponent {
           },
           { title: 'Nielsen Norman Group', url: 'https://www.nngroup.com/' },
           {
-            title: 'HTMl Standard',
+            title: 'HTML Standard',
             author: 'WHATWG',
             url: 'https://html.spec.whatwg.org/multipage/',
           },
@@ -433,12 +433,22 @@ export class StudyRecordComponent {
     modules: [
       {
         title: 'Junior Programmer Pathway',
-        description: '',
+        description:
+          'A self paced course to introduce game development through a set of development and project management activities.',
         link: {
           url: 'https://learn.unity.com/pathway/junior-programmer',
           website_name: 'Website',
         },
         module_result: 'Ongoing',
+      },
+      {
+        title: 'Create With VR',
+        description:
+          'An official course on creating virtual reality applications using Unity.',
+        link: {
+          url: 'https://learn.unity.com/course/create-with-vr',
+          website_name: 'Website',
+        },
       },
     ],
   };
