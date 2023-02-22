@@ -1,6 +1,6 @@
 <h3>{{ course.title }}</h3>
 at
-<app-af-website-link [websiteLink]="course.link"></app-af-website-link>:
+<app-af-website-link [website]="course.link"></app-af-website-link>:
 <ul>
   <li *ngFor="let module of course.modules">
     <div>
@@ -16,11 +16,11 @@ at
     </div>
     <app-af-website-link
       *ngIf="module.github"
-      [websiteLink]="module.github"
+      [website]="module.github"
     ></app-af-website-link>
     <app-af-website-link
       *ngIf="module.link"
-      [websiteLink]="module.link"
+      [website]="module.link"
     ></app-af-website-link>
     <p *ngIf="module.description">{{ module.description }}</p>
     <div class="grid">

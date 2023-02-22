@@ -6,7 +6,7 @@ const modules = [
     title: "The Computing and IT Project",
     description: "",
     url: "https://www.open.ac.uk/courses/qualifications/details/tm470?orig=q62",
-    website_name: "Website",
+    name: "Website",
     github: "",
     module_code: "TM470",
     assessments: [],
@@ -21,7 +21,7 @@ const modules = [
     title: "Machine Learning and Artificial Intelligence",
     description: "",
     url: "https://www.open.ac.uk/courses/qualifications/details/tm358",
-    website_name: "Website",
+    name: "Website",
     github: "",
     module_code: "TM358",
     assessments: [],
@@ -33,7 +33,7 @@ const modules = [
     title: "Software Engineering",
     description: "",
     url: "https://www.open.ac.uk/courses/modules/tm354",
-    website_name: "Website",
+    name: "Website",
     github: "",
     module_code: "TM354",
     assessments: [],
@@ -45,7 +45,7 @@ const modules = [
     title: "Data management and analysis",
     description: "",
     url: "https://www.open.ac.uk/courses/modules/tm351",
-    website_name: "Website",
+    name: "Website",
     github: "",
     module_code: "TM351",
     assessments: [],
@@ -130,7 +130,7 @@ const modules = [
     description:
       "Comprehensive web technology module from fundamentals (HTML, CSS, Standards) to topics such as accessibility, security, and architectures (Client-Server etc). Web APIs/HTTP/REST and programming languages (JavaScript and PHP - SPAs, SSGs, SSRs) are covered in depth in different scenarios to show their use cases (AJAX). ",
     url: "https://www.open.ac.uk/courses/modules/tt284",
-    website_name: "Website",
+    name: "Website",
   },
   {
     module_code: "TM255",
@@ -172,14 +172,14 @@ const modules = [
     description:
       "General networking and communications module. Security, cryptography, IoT, WiFi/Cell networks, interaction and collaboration, virtualisation.",
     url: "https://www.open.ac.uk/courses/modules/tm255",
-    website_name: "Website",
+    name: "Website",
   },
   {
     title: "Algorithms, Data Structures and Computability",
     description:
       "Algorithms and complexity (Big-O notation), runtime analysis, data structures (lists, stacks, queues, dictionaries, sets, trees, graphs, search algorithms, recursion, greedy. Python and Jupyter Notebooks. Logic, computability (eg. P != NP, halting problem etc). Content was covered through practical Python programming exercises and Notebooks projects.",
     url: "https://www.open.ac.uk/courses/modules/m269",
-    website_name: "Website",
+    name: "Website",
     module_code: "M269",
     assessments: [
       {
@@ -231,7 +231,7 @@ const modules = [
     description:
       "Fundamentals of object-oriented programming taught with the BlueJ IDE and Java.",
     url: "https://www.open.ac.uk/courses/modules/m250",
-    website_name: "Website",
+    name: "Website",
     module_code: "M250",
     assessments: [
       {
@@ -277,7 +277,7 @@ const modules = [
   {
     title: "Discovering Mathematics",
     description: "",
-    website_name: "Website",
+    name: "Website",
     module_code: "MU123",
     module_result: "Distinction",
     module_resources: [
@@ -292,7 +292,7 @@ const modules = [
     description:
       "Networking, operating systems (Linux, architectures and virtualisation), robotics and AI",
     url: "https://www.open.ac.uk/courses/modules/tm129",
-    website_name: "Website",
+    name: "Website",
     module_code: "TM129",
     module_result: "Grade 2 Pass",
     module_resources: [
@@ -316,7 +316,7 @@ const modules = [
     description:
       "Block 1: Computer hardware and architecture, data management, cloud computing, mobile devices - Block 2: Python programming and algorithms - Block 3: Security, hacking, surveillance",
     url: "https://www.open.ac.uk/courses/modules/tm112",
-    website_name: "Website",
+    name: "Website",
     module_code: "TM112",
     module_result: "Distinction",
     module_resources: [
@@ -331,7 +331,7 @@ const modules = [
     title: "Introduction to Computing and Information Technology 1",
     description: "IT fundamentals, programming, and networking.",
     url: "https://www.open.ac.uk/courses/modules/tm111",
-    website_name: "Website",
+    name: "Website",
     module_code: "TM111",
     module_result: "Distinction",
   },

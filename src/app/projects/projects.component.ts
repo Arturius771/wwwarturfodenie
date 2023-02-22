@@ -13,7 +13,7 @@ export class ProjectsComponent {
       'A python math library that outputs formatted instructions on how to compute mathematical formulas and expressions. Wish I named it afmaf.',
     link: {
       url: 'https://pypi.org/project/afmaths/#description',
-      website_name: 'pip install afmaths',
+      name: 'pip install afmaths',
     },
   };
   arturfodenie: Project = {
@@ -25,7 +25,7 @@ export class ProjectsComponent {
     },
     github: {
       url: 'https://github.com/Arturius771/__wwwarturfodenie-website',
-      website_name: 'GitHub',
+      name: 'GitHub',
     },
   };
   akamai: Project = {
@@ -36,25 +36,25 @@ export class ProjectsComponent {
   volt: Project = {
     title: 'Volt Website',
     description: 'Volt Europa Tech Team developer. Vue TS framework.',
-    link: { url: 'https://www.volteuropa.org/', website_name: 'Volt Website' },
+    link: { url: 'https://www.volteuropa.org/', name: 'Volt Website' },
   };
   lment: Project = {
     title: 'LMent',
     description:
       'WIP network analysis and logging project. Pronounced element.',
-    link: { url: 'http://lment.ie/', website_name: 'Website' },
+    link: { url: 'http://lment.ie/', name: 'Website' },
     github: {
       url: 'https://github.com/Arturius771/LMent',
-      website_name: 'GitHub',
+      name: 'GitHub',
     },
   };
   phasmocrew: Project = {
     title: 'PhasmoCrew Website',
     description: '',
-    link: { url: 'http://www.phasmocrew.org/#/home', website_name: 'Website' },
+    link: { url: 'http://www.phasmocrew.org/#/home', name: 'Website' },
     github: {
       url: 'https://github.com/Arturius771/wwwphasmocreworg-website',
-      website_name: 'GitHub',
+      name: 'GitHub',
     },
   };
 }

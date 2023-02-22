@@ -7,11 +7,11 @@ import { WebsiteLink } from '../../model/website-link';
   styleUrls: ['./af-website-link.component.less'],
 })
 export class AfWebsiteLinkComponent implements OnInit {
-  @Input() websiteLink!: WebsiteLink;
+  @Input() website!: WebsiteLink;
 
   ngOnInit() {
-    if (!this.websiteLink.website_name) {
-      this.websiteLink.website_name = 'Website';
+    if (!this.website.name) {
+      this.website.name = 'Website';
     }
   }
 }

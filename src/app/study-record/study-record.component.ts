@@ -27,7 +27,7 @@ export class StudyRecordComponent {
     institution: 'The Open University',
     link: {
       url: 'https://www.open.ac.uk/',
-      website_name: 'The Open University',
+      name: 'The Open University',
     },
     modules: [
       {
@@ -392,7 +392,7 @@ export class StudyRecordComponent {
   ibat_course: Course = {
     title: 'Diploma in Computer Programming',
     institution: 'IBAT',
-    link: { url: 'https://www.ibat.ie/', website_name: 'WebSite' },
+    link: { url: 'https://www.ibat.ie/', name: 'WebSite' },
     modules: [
       {
         title: 'Diploma in Computer Programming',
@@ -422,7 +422,7 @@ export class StudyRecordComponent {
   unity_course: Course = {
     title: 'Unity Learn',
     institution: 'Unity',
-    link: { url: 'https://learn.unity.com/', website_name: 'Website' },
+    link: { url: 'https://learn.unity.com/', name: 'Website' },
     modules: [
       {
         title: 'Junior Programmer Pathway',
