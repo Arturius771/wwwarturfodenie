@@ -22,7 +22,6 @@ export class ProjectsComponent {
       'Personal website, currently it is an Angular frontend SPA (previously PHP MPA) on an Apache webserver and MySQL database (Thinking of moving to MongoDB). It will eventually be a MEAN project. Content changes according to current mood. Currently it is a portfolio website of sorts, but usually it is updated to implement something I find interesting.',
     link: {
       url: 'https://pypi.org/project/afmaths/#description',
-      website_name: 'Website',
     },
     github: {
       url: 'https://github.com/Arturius771/__wwwarturfodenie-website',

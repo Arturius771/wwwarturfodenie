@@ -1,6 +1,10 @@
 <h2>{{ project.title }}</h2>
-<a *ngIf="project.github" href="{{ project.github.url }}">GitHub</a>
-<a *ngIf="project.link" [href]="project.link.url">{{
-  project.link.website_name
-}}</a>
+<app-af-website-link
+  *ngIf="project.github"
+  [websiteLink]="project.github"
+></app-af-website-link>
+<app-af-website-link
+  *ngIf="project.link"
+  [websiteLink]="project.link"
+></app-af-website-link>
 <p *ngIf="project.description">{{ project.description }}</p>

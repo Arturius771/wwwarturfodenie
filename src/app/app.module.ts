@@ -17,6 +17,7 @@ import { AfResourceComponent } from './lib/components/af-resource/af-resource.co
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { AfImageComponent } from './lib/components/af-image/af-image.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AfWebsiteLinkComponent } from './lib/components/af-website-link/af-website-link.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { HttpClientModule } from '@angular/common/http';
     LandingPageComponent,
     AfResourceComponent,
     AfImageComponent,
+    AfWebsiteLinkComponent,
   ],
   imports: [
     BrowserModule,

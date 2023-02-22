@@ -8,7 +8,7 @@ import { Project } from '../lib/model/project';
 //   description: 'IT fundamentals, programming, and networking.',
 //   url: 'https://www.open.ac.uk/courses/modules/tm111',
 //   github: '',
-//   website_name: 'Website',
+//
 //   module_code: 'TM111',
 //   assessments: [Assessment],
 //   module_result: 'Distinction',
@@ -25,29 +25,32 @@ export class StudyRecordComponent {
   computing_it_course: Course = {
     title: 'Computing and IT BSc',
     institution: 'The Open University',
-    link: { url: 'https://www.open.ac.uk/', website_name: '' },
+    link: {
+      url: 'https://www.open.ac.uk/',
+      website_name: 'The Open University',
+    },
     modules: [
       {
         title: 'The Computing and IT Project',
         description: '',
         link: {
           url: 'https://www.open.ac.uk/courses/qualifications/details/tm470?orig=q62',
-          website_name: 'Website',
         },
         module_code: 'TM470',
         module_result: 'Ongoing',
         module_software: [
           { title: 'Azure DevOps' },
           { title: 'Git', url: 'https://git-scm.com/' },
+          { title: 'TensorFlow' },
+          { title: 'Microsoft Office' },
         ],
       },
       {
         title: 'Machine Learning and Artificial Intelligence',
         description:
-          'Comprehensive AI and ML module with blocks on Artificial Neural Networks, Convolutional Neural Networks, Recurrent Neural Networks, Autoencoders, model analysis and application, as well as ethical issues.',
+          'Comprehensive AI and ML module with blocks on Artificial Neural Networks, Convolutional Neural Networks, Recurrent Neural Networks, Autoencoders, model analysis and application, as well as ethical issues. Mathematical topics such as differentiation, integration, and linear algebra were covered in relation to Neural Networks.',
         link: {
           url: 'https://www.open.ac.uk/courses/qualifications/details/tm358',
-          website_name: 'Website',
         },
         module_code: 'TM358',
         module_result: 'Ongoing',
@@ -59,7 +62,6 @@ export class StudyRecordComponent {
           'Software system development as an engineering activity, modelling software systems (UML), Agile and non-Agile approaches, requirements engineering (functional/non-functional types, relationship between requirements and testing), use case models, business domain modelling, structural modelling (conceptual models and object/class models, relationships/associations, constraints/invariants), dynamic modelling, software architectures, design patterns, quality requirements.',
         link: {
           url: 'https://www.open.ac.uk/courses/modules/tm354',
-          website_name: 'Website',
         },
         module_code: 'TM354',
         assessments: [
@@ -80,7 +82,6 @@ export class StudyRecordComponent {
         description: '',
         link: {
           url: 'https://www.open.ac.uk/courses/modules/tm351',
-          website_name: 'Website',
         },
         module_code: 'TM351',
         module_result: 'Awaiting Result',
@@ -164,7 +165,6 @@ export class StudyRecordComponent {
           'Comprehensive web technology module from fundamentals (HTML, CSS, Standards) to topics such as accessibility, security, and architectures (Client-Server etc). Web APIs/HTTP/REST and programming languages (JavaScript and PHP - SPAs, SSGs, SSRs) are covered in depth in different scenarios to show their use cases (AJAX). ',
         link: {
           url: 'https://www.open.ac.uk/courses/modules/tt284',
-          website_name: 'Website',
         },
       },
       {
@@ -208,7 +208,6 @@ export class StudyRecordComponent {
           'General networking and communications module. Security, cryptography, IoT, WiFi/Cell networks, interaction and collaboration, virtualisation.',
         link: {
           url: 'https://www.open.ac.uk/courses/modules/tm255',
-          website_name: 'Website',
         },
       },
       {
@@ -217,7 +216,6 @@ export class StudyRecordComponent {
           'Algorithms and complexity (Big-O notation), runtime analysis, data structures (lists, stacks, queues, dictionaries, sets, trees, graphs, search algorithms, recursion, greedy. Python and Jupyter Notebooks. Logic, computability (eg. P != NP, halting problem etc). Content was covered through practical Python programming exercises and Notebooks projects.',
         link: {
           url: 'https://www.open.ac.uk/courses/modules/m269',
-          website_name: 'Website',
         },
         module_code: 'M269',
         assessments: [
@@ -271,7 +269,6 @@ export class StudyRecordComponent {
           'Fundamentals of object-oriented programming taught with the BlueJ IDE and Java.',
         link: {
           url: 'https://www.open.ac.uk/courses/modules/m250',
-          website_name: 'Website',
         },
         module_code: 'M250',
         assessments: [
@@ -333,7 +330,6 @@ export class StudyRecordComponent {
           'Networking, operating systems (Linux, architectures and virtualisation), robotics and AI',
         link: {
           url: 'https://www.open.ac.uk/courses/modules/tm129',
-          website_name: 'Website',
         },
         module_code: 'TM129',
         module_result: 'Grade 2 Pass',
@@ -369,7 +365,6 @@ export class StudyRecordComponent {
           'Block 1: Computer hardware and architecture, data management, cloud computing, mobile devices - Block 2: Python programming and algorithms - Block 3: Security, hacking, surveillance',
         link: {
           url: 'https://www.open.ac.uk/courses/modules/tm112',
-          website_name: 'Website',
         },
         module_code: 'TM112',
         module_result: 'Distinction',
@@ -388,7 +383,6 @@ export class StudyRecordComponent {
         description: 'IT fundamentals, programming, and networking.',
         link: {
           url: 'https://www.open.ac.uk/courses/modules/tm111',
-          website_name: 'Website',
         },
         module_code: 'TM111',
         module_result: 'Distinction',
@@ -406,7 +400,6 @@ export class StudyRecordComponent {
           'Eleven week course on OOP fundamentals in Java. Skills such as development environment management, CLI compilation, and NetBeans IDE were taught. Computational problem solving and algorithms were introduced.',
         link: {
           url: 'https://www.ibat.ie/courses/java-programming-diploma.html',
-          website_name: 'Website',
         },
         assessments: [
           {
@@ -437,7 +430,6 @@ export class StudyRecordComponent {
           'A self paced course to introduce game development through a set of development and project management activities.',
         link: {
           url: 'https://learn.unity.com/pathway/junior-programmer',
-          website_name: 'Website',
         },
         module_result: 'Ongoing',
       },
@@ -447,7 +439,6 @@ export class StudyRecordComponent {
           'An official course on creating virtual reality applications using Unity.',
         link: {
           url: 'https://learn.unity.com/course/create-with-vr',
-          website_name: 'Website',
         },
       },
     ],

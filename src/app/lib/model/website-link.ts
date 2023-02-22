@@ -1,4 +1,4 @@
 export interface WebsiteLink {
   url: string;
-  website_name: string;
+  website_name?: string;
 }
