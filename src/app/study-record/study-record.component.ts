@@ -79,7 +79,6 @@ export class StudyRecordComponent {
       },
       {
         title: 'Data management and analysis',
-        description: '',
         link: {
           url: 'https://www.open.ac.uk/courses/modules/tm351',
         },
@@ -91,6 +90,18 @@ export class StudyRecordComponent {
           { title: 'Docker' },
           { title: 'Jupyter' },
           { title: 'pandas' },
+        ],
+        module_resources: [
+          {
+            title: 'MongoDB: The Definitive Guide',
+            author: 'Bradshaw S., Brazil E., and Chodorow K.',
+            edition: 3,
+          },
+          {
+            title: 'Relational Database Design and Implementation',
+            author: 'Jan L. Harrington',
+            edition: 4,
+          },
         ],
       },
       {
