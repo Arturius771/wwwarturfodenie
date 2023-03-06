@@ -90,6 +90,7 @@ export class StudyRecordComponent {
           { title: 'Docker' },
           { title: 'Jupyter' },
           { title: 'pandas' },
+          { title: 'PyMongo' },
         ],
         module_resources: [
           {
