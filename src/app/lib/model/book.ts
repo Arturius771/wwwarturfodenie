@@ -1,5 +1,3 @@
-import { WebsiteLink } from './website-link';
-
 export interface Book {
   title: string;
   author?: string;

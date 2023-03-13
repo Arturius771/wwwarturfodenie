@@ -6,7 +6,7 @@ const afdbtoken = require("../database/afdbtoken.js");
 // Schemas
 const User = require("../database/models/user.js");
 
-token = `mongodb+srv://${afdbtoken.username}:${afdbtoken.password}@cluster0.xydbj.mongodb.net?retryWrites=true&w=majority`;
+token = `mongodb+srv://${afdbtoken.username}:${afdbtoken.password}@cluster0.xydbj.mongodb.net/${afdbtoken.database}?retryWrites=true&w=majority`;
 
 console.log(token);
 

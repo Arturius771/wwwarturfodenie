@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Course } from '../lib/model/course';
-import { Project } from '../lib/model/project';
 
 // Example module:
 // tm111: Module = {
@@ -455,4 +454,8 @@ export class StudyRecordComponent {
       },
     ],
   };
+
+  public getCourse() {
+    return this.computing_it_course;
+  }
 }
