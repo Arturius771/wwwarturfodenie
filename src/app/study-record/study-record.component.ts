@@ -31,7 +31,8 @@ export class StudyRecordComponent {
     modules: [
       {
         title: 'The Computing and IT Project',
-        description: '',
+        description:
+          'A flexible project module that can be based on any of the previous topics covered throughout the course. My project was applying machine learning techniques to detect accessibility errors in source code. This involved trialing different approaches and evaluating their perfomance, and iterating further on the most promising approaches.',
         link: {
           url: 'https://www.open.ac.uk/courses/qualifications/details/tm470?orig=q62',
         },
@@ -41,13 +42,14 @@ export class StudyRecordComponent {
           { title: 'Azure DevOps' },
           { title: 'Git', url: 'https://git-scm.com/' },
           { title: 'TensorFlow' },
+          { title: 'PyTorch', url: 'https://pytorch.org/' },
           { title: 'Microsoft Office' },
         ],
       },
       {
         title: 'Machine Learning and Artificial Intelligence',
         description:
-          'Comprehensive AI and ML module with blocks on Artificial Neural Networks, Convolutional Neural Networks, Recurrent Neural Networks, Autoencoders, model analysis and application, as well as ethical issues. Mathematical topics such as differentiation, integration, and linear algebra were covered in relation to Neural Networks.',
+          'Comprehensive AI and ML module with blocks on Artificial Neural Networks, Convolutional Neural Networks, Recurrent Neural Networks, Autoencoders, model analysis and application, as well as ethical issues. Mathematical topics such as differentiation, integration, and linear algebra were covered so that those techniques could be applied when training and optimising machine learning models.',
         link: {
           url: 'https://www.open.ac.uk/courses/qualifications/details/tm358',
         },
@@ -325,7 +327,6 @@ export class StudyRecordComponent {
       },
       {
         title: 'Discovering Mathematics',
-        description: '',
         module_code: 'MU123',
         module_result: 'Distinction',
         module_resources: [
