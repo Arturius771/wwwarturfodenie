@@ -37,7 +37,7 @@ export class StudyRecordComponent {
           url: 'https://www.open.ac.uk/courses/qualifications/details/tm470?orig=q62',
         },
         module_code: 'TM470',
-        module_result: 'Ongoing',
+        module_result: 'Awaiting Results',
         module_software: [
           { title: 'Azure DevOps' },
           { title: 'Git', url: 'https://git-scm.com/' },
@@ -54,8 +54,18 @@ export class StudyRecordComponent {
           url: 'https://www.open.ac.uk/courses/qualifications/details/tm358',
         },
         module_code: 'TM358',
-        module_result: 'Ongoing',
+        module_result: 'Awaiting Results',
         module_software: [{ title: 'TensorFlow' }],
+        module_resources: [
+          {
+            title:
+              'Data Mining: Practical Machine Learning Tools and Techniques',
+            author:
+              'Ian H. Witten, Eibe Frank, Mark A. Hall and Christopher J. Pal',
+            edition: 4,
+            year: 2016,
+          },
+        ],
       },
       {
         title: 'Software Engineering',
