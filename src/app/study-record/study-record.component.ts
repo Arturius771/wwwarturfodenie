@@ -218,7 +218,7 @@ export class StudyRecordComponent {
         ],
         title: 'Communication and Information Technologies',
         description:
-          'General networking and communications module. Security, cryptography, IoT, WiFi/Cell networks, interaction and collaboration, virtualisation.',
+          'General networking and communications module. Information storage, radio transmission and mobile communication (IoT, 1-5G etc) and security/error control are covered in Block 1. Block 2 covered general interaction design and team collaboration, human-computer interactions with a focus on user interfaces. Block 3 covered cybersecurity, encryption, and ethical concerns related to biometric information processing and storage as well as the societal risks of artificial intelligence.',
         link: {
           url: 'https://www.open.ac.uk/courses/modules/tm255',
         },
