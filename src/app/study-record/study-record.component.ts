@@ -32,7 +32,7 @@ export class StudyRecordComponent {
       {
         title: 'The Computing and IT Project',
         description:
-          'A flexible project module that can be based on any of the previous topics covered throughout the course. My project was applying machine learning techniques to detect accessibility errors in source code. This involved trialing different approaches and evaluating their perfomance, and iterating further on the most promising approaches.',
+          'A flexible project module that can be based on any of the previous topics covered throughout the course. My project was applying machine learning techniques to detect accessibility errors in source code. This involved trialing different approaches and evaluating their perfomance, and iterating further on the most promising results.',
         link: {
           url: 'https://www.open.ac.uk/courses/qualifications/details/tm470?orig=q62',
         },
