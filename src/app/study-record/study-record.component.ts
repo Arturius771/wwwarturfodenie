@@ -90,6 +90,8 @@ export class StudyRecordComponent {
       },
       {
         title: 'Data management and analysis',
+        description:
+          'Focused on DBMS architectures and implementation, in both relational (PostgreSQL) and NoSQL contexts (MongoDB, a document database). The module begins with the data analysis pipeline, and relevant technologies such as pandas for tabular visualisations and seaborn for graphs. Then more in depth relational database work which involved data modelling, normalisation, subqueries/views, and concurrency. The NoSQL portion of the module focused on document databases with the appropriate data analysis techniques, as well as scaling the databases (replication/sharding/distributed transactions). The module concluded with data warehousing, data mining, and linked semantic web dataset interactions (eg. OWL and RDF languages).',
         link: {
           url: 'https://www.open.ac.uk/courses/modules/tm351',
         },
@@ -118,6 +120,9 @@ export class StudyRecordComponent {
       },
       {
         module_code: 'TT284',
+        title: 'Web Technologies',
+        description:
+          'Comprehensive web technology module from tech fundamentals (HTML, CSS) to topics such as accessibility, security, web standards, and architectures (Client-Server etc). Web APIs/HTTP/REST and programming languages (JavaScript and PHP - SPAs, SSGs, SSRs) are covered in depth in different scenarios to show various use cases. ',
         assessments: [
           {
             assessment_title: 'TMA01',
@@ -183,15 +188,15 @@ export class StudyRecordComponent {
             url: 'https://validator.w3.org/',
           },
         ],
-        title: 'Web Technologies',
-        description:
-          'Comprehensive web technology module from fundamentals (HTML, CSS, Standards) to topics such as accessibility, security, and architectures (Client-Server etc). Web APIs/HTTP/REST and programming languages (JavaScript and PHP - SPAs, SSGs, SSRs) are covered in depth in different scenarios to show their use cases (AJAX). ',
         link: {
           url: 'https://www.open.ac.uk/courses/modules/tt284',
         },
       },
       {
         module_code: 'TM255',
+        title: 'Communication and Information Technologies',
+        description:
+          'General networking and communications module. Information storage, radio transmission and mobile communication (IoT, 1-5G etc) and security/error control are covered in Block 1. Block 2 covered general interaction design and team collaboration, human-computer interactions with a focus on user interfaces and relevant heuristics. Block 3 covered cybersecurity, encryption, and ethical concerns related to biometric information processing and storage as well as the societal risks of artificial intelligence.',
         assessments: [
           {
             assessment_title: 'TMA01',
@@ -226,9 +231,6 @@ export class StudyRecordComponent {
             url: 'https://www.virtualbox.org/',
           },
         ],
-        title: 'Communication and Information Technologies',
-        description:
-          'General networking and communications module. Information storage, radio transmission and mobile communication (IoT, 1-5G etc) and security/error control are covered in Block 1. Block 2 covered general interaction design and team collaboration, human-computer interactions with a focus on user interfaces and relevant heuristics. Block 3 covered cybersecurity, encryption, and ethical concerns related to biometric information processing and storage as well as the societal risks of artificial intelligence.',
         link: {
           url: 'https://www.open.ac.uk/courses/modules/tm255',
         },
@@ -236,7 +238,7 @@ export class StudyRecordComponent {
       {
         title: 'Algorithms, Data Structures and Computability',
         description:
-          'Algorithms and complexity (Big-O notation), runtime analysis, data structures (lists, stacks, queues, dictionaries, sets, trees, graphs, search algorithms, recursion, greedy. Python and Jupyter Notebooks. Logic, computability (eg. P != NP, halting problem etc). Content was covered through practical Python programming exercises and Notebooks projects.',
+          'Algorithms and complexity (Big-O notation), runtime analysis, data structures (lists, stacks, queues, dictionaries, sets, trees, graphs, search algorithms, recursion, greedy. Python and Jupyter Notebooks. Logic, theoretical computer science, and computability (eg. P != NP, halting problem etc). Content was covered through practical Python programming exercises and Notebooks projects.',
         link: {
           url: 'https://www.open.ac.uk/courses/modules/m269',
         },
