@@ -416,7 +416,7 @@ export class StudyRecordComponent {
   ibat_course: Course = {
     title: 'Diploma in Computer Programming',
     institution: 'IBAT',
-    link: { url: 'https://www.ibat.ie/', name: 'WebSite' },
+    link: { url: 'https://www.ibat.ie/' },
     modules: [
       {
         title: 'Diploma in Computer Programming',
