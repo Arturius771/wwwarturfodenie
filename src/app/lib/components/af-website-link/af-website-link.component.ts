@@ -10,6 +10,10 @@ export class AfWebsiteLinkComponent implements OnInit {
   @Input() website!: WebsiteLink;
 
   ngOnInit() {
+    this.setWebsiteTitleIfMissing();
+  }
+
+  private setWebsiteTitleIfMissing() {
     if (!this.website.name) {
       this.website.name = 'Website';
     }
