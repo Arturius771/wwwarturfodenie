@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Course } from '../lib/model/course';
+import { Course } from '../../lib/model/course';
 
 // Example module:
 // tm111: Module = {
