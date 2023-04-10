@@ -97,6 +97,14 @@ export class StudyRecordComponent {
             author: 'Apache',
           },
         ],
+        module_resources: [
+          {
+            title:
+              'Design Patterns: Elements of Reusable Object-Oriented Software',
+            author: 'Gamma E., Helm R., Johnson R., Vlissides J.,',
+            year: 1995,
+          },
+        ],
       },
       {
         title: 'Data management and analysis',
