@@ -86,6 +86,16 @@ export class StudyRecordComponent {
         module_software: [
           { title: 'diagrams.net' },
           { title: 'UMLet', url: 'https://www.umlet.com/' },
+          {
+            title: 'Jakarta Enterprise Edition',
+            url: 'https://jakarta.ee/',
+            author: 'Eclipse Foundation',
+          },
+          {
+            title: 'NetBeans v12.2',
+            url: 'https://netbeans.apache.org/',
+            author: 'Apache',
+          },
         ],
       },
       {
