@@ -140,7 +140,7 @@ export class StudyRecordComponent {
         module_code: 'TT284',
         title: 'Web Technologies',
         description:
-          'Comprehensive web technology module from tech fundamentals (HTML, CSS) to topics such as accessibility, security, web standards, and architectures (Client-Server etc). Web APIs/HTTP/REST and programming languages (JavaScript and PHP - SPAs, SSGs, SSRs) are covered in depth in different scenarios to show various use cases. ',
+          'Comprehensive web technology module from tech fundamentals (HTML, CSS) to topics such as accessibility, security, web standards, and architectures (Client-Server etc). Web APIs/HTTP/REST/AJAX and programming languages (JavaScript and PHP - SPAs, SSGs, SSRs) are covered in depth in different scenarios to show various use cases. ',
         assessments: [
           {
             assessment_title: 'TMA01',
