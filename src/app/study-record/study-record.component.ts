@@ -485,8 +485,4 @@ export class StudyRecordComponent {
       },
     ],
   };
-
-  public getCourse() {
-    return this.computing_it_course;
-  }
 }

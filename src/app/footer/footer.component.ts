@@ -11,5 +11,5 @@ export class FooterComponent {
 
 function getYear(): number {
   var year: number = new Date().getFullYear();
-  return (year = year >= 2021 ? year : 2022);
+  return year >= 2021 ? year : 2022;
 }
