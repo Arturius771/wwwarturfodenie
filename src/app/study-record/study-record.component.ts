@@ -256,7 +256,7 @@ export class StudyRecordComponent {
       {
         title: 'Algorithms, Data Structures and Computability',
         description:
-          'Algorithms and complexity (Big-O notation), runtime analysis, data structures (lists, stacks, queues, dictionaries, sets, trees, graphs, search algorithms, recursion, greedy. Python and Jupyter Notebooks. Logic, theoretical computer science, and computability (eg. P != NP, halting problem etc). Content was covered through practical Python programming exercises and Notebooks projects.',
+          'Algorithms and complexity (Big-O notation), runtime analysis, data structures (lists, stacks, queues, dictionaries, sets, trees, graphs, search algorithms, recursion, greedy). Python and Jupyter Notebooks. Logic, theoretical computer science, and computability (eg. P != NP, halting problem etc). Content was covered through practical Python programming exercises and Notebooks projects.',
         link: {
           url: 'https://www.open.ac.uk/courses/modules/m269',
         },
@@ -270,7 +270,7 @@ export class StudyRecordComponent {
           {
             assessment_title: 'TMA02',
             description:
-              'Binary Trees, recursive functions and graphs, greedy algorithms (Python)',
+              'Binary Trees, graphs, recursive functions and graphs, greedy algorithms (Python)',
           },
           {
             assessment_title: 'TMA03',
