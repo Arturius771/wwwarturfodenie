@@ -1,12 +1,19 @@
-a {
-  padding: 15px;
-}
-
-div {
+:host {
   display: flex;
   position: sticky;
   top: 0;
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
+}
+a {
+  padding: 15px;
+  border-radius: 10px;
+  color: #ff0000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
