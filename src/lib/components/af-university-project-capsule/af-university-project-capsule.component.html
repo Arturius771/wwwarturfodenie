@@ -42,10 +42,10 @@ at
         <p *ngIf="module.assessments">
           <u>Projects:</u>
           <li *ngFor="let assessment of module.assessments">
-            <app-af-toggle-button
+            <app-af-show-more-show-less
               [title]="assessment.assessment_title"
               [content]="assessment.description"
-            ></app-af-toggle-button>
+            ></app-af-show-more-show-less>
           </li>
         </p>
       </ul>

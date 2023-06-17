@@ -11,13 +11,13 @@ import { ProjectsComponent } from './projects/projects.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AfProjectCapsuleComponent } from '../lib/components/af-project-capsule/af-project-capsule.component';
 import { AfUniversityProjectCapsuleComponent } from '../lib/components/af-university-project-capsule/af-university-project-capsule.component';
-import { AfToggleButtonComponent } from '../lib/components/af-toggle-button/af-toggle-button.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { AfResourceComponent } from '../lib/components/af-resource/af-resource.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { AfImageComponent } from '../lib/components/af-image/af-image.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AfWebsiteLinkComponent } from '../lib/components/af-website-link/af-website-link.component';
+import { AfShowMoreShowLess } from 'src/lib/components/af-show-more-show-less/af-show-more-show-less.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +30,7 @@ import { AfWebsiteLinkComponent } from '../lib/components/af-website-link/af-web
     NavbarComponent,
     AfProjectCapsuleComponent,
     AfUniversityProjectCapsuleComponent,
-    AfToggleButtonComponent,
+    AfShowMoreShowLess,
     LandingPageComponent,
     AfResourceComponent,
     AfImageComponent,
