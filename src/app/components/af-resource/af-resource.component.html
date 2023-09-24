@@ -1,0 +1,10 @@
+{{ resource.author }}
+<label *ngIf="resource.year">({{ resource.year }}) </label>
+<label *ngIf="resource.article_title"> '{{ resource.article_title }}' </label>
+<i *ngIf="resource.url"
+  ><app-af-website-link
+    [website]="{ url: resource.url, title: resource.title }"
+    >{{ resource.title }}</app-af-website-link
+  ></i
+><i *ngIf="!resource.url">{{ resource.title }}</i>
+<label *ngIf="resource.edition"> ed. {{ resource.edition }} </label>
