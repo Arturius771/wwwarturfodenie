@@ -25,20 +25,6 @@ at
     <p *ngIf="module.description">{{ module.description }}</p>
     <div class="grid">
       <ul>
-        <p *ngIf="module.module_result">
-          <u>Module Result:</u>
-          <li>{{ module.module_result }}</li>
-        </p>
-      </ul>
-      <ul>
-        <p *ngIf="module.module_resources">
-          <u>Resources:</u>
-          <li *ngFor="let resource of module.module_resources">
-            <app-af-resource [resource]="resource"></app-af-resource>
-          </li>
-        </p>
-      </ul>
-      <ul>
         <p *ngIf="module.assessments">
           <u>Projects:</u>
           <li *ngFor="let assessment of module.assessments">
@@ -49,12 +35,26 @@ at
           </li>
         </p>
       </ul>
-      <ul>
-        <p *ngIf="module.module_software">
+      <ul *ngIf="module.module_resources">
+        <p>
+          <u>Resources:</u>
+          <li *ngFor="let resource of module.module_resources">
+            <app-af-resource [resource]="resource"></app-af-resource>
+          </li>
+        </p>
+      </ul>
+      <ul *ngIf="module.module_software">
+        <p>
           <u>Software:</u>
           <li *ngFor="let resource of module.module_software">
             <app-af-resource [resource]="resource"></app-af-resource>
           </li>
+        </p>
+      </ul>
+      <ul *ngIf="module.module_result">
+        <p>
+          <u>Module Result:</u>
+          <li>{{ module.module_result }}</li>
         </p>
       </ul>
     </div>
