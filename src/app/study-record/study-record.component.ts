@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Course } from '../../lib/model/course';
+import { Course } from '../../lib/models/course';
 
 // Example module:
 // tm111: Module = {
@@ -54,7 +54,7 @@ export class StudyRecordComponent {
           url: 'https://www.open.ac.uk/courses/qualifications/details/tm358',
         },
         module_code: 'TM358',
-        module_result: 'Awaiting Results',
+        module_result: 'Grade 2 Pass',
         module_software: [{ title: 'TensorFlow' }],
         module_resources: [
           {
@@ -82,7 +82,7 @@ export class StudyRecordComponent {
               'Use case models and user stories, activity diagrams, Agile methodologies, Volere templates.',
           },
         ],
-        module_result: 'Awaiting Result',
+        module_result: 'Grade 2 Pass',
         module_software: [
           { title: 'diagrams.net' },
           { title: 'UMLet', url: 'https://www.umlet.com/' },
@@ -114,7 +114,7 @@ export class StudyRecordComponent {
           url: 'https://www.open.ac.uk/courses/modules/tm351',
         },
         module_code: 'TM351',
-        module_result: 'Awaiting Result',
+        module_result: 'Grade 2 Pass',
         module_software: [
           { title: 'PostgreSQL' },
           { title: 'MongoDB' },

@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Project } from '../../model/project';
+import { Project } from 'src/lib/models/project';
 
 @Component({
   selector: 'app-af-project-capsule',

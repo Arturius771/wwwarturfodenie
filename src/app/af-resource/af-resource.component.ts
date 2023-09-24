@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Book } from '../../model/book';
+import { Book } from 'src/lib/models/book';
 
 @Component({
   selector: 'app-af-resource',

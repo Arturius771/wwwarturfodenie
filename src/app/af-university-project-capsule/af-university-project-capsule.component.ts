@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Course } from '../../model/course';
+import { Course } from 'src/lib/models/course';
 
 @Component({
   selector: 'app-af-university-projects-capsule',

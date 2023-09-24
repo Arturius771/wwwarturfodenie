@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { WebsiteLink } from '../../model/website-link';
+import { WebsiteLink } from 'src/lib/models/website-link';
 
 @Component({
   selector: 'app-af-website-link',

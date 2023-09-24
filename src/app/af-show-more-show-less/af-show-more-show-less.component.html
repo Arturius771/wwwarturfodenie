@@ -1,4 +1,4 @@
-<button (click)="onClick()">
+<button mat-stroked-button (click)="onClick()">
   <span *ngIf="this.showContent">Hide {{ text }}</span>
   <span *ngIf="!this.showContent">Show {{ text }}</span>
 </button>

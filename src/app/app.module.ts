@@ -9,15 +9,19 @@ import { StudyRecordComponent } from './study-record/study-record.component';
 import { RouterModule } from '@angular/router';
 import { ProjectsComponent } from './projects/projects.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { AfProjectCapsuleComponent } from '../lib/components/af-project-capsule/af-project-capsule.component';
-import { AfUniversityProjectCapsuleComponent } from '../lib/components/af-university-project-capsule/af-university-project-capsule.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
-import { AfResourceComponent } from '../lib/components/af-resource/af-resource.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
-import { AfImageComponent } from '../lib/components/af-image/af-image.component';
 import { HttpClientModule } from '@angular/common/http';
-import { AfWebsiteLinkComponent } from '../lib/components/af-website-link/af-website-link.component';
-import { AfShowMoreShowLess } from 'src/lib/components/af-show-more-show-less/af-show-more-show-less.component';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { AfProjectCapsuleComponent } from './af-project-capsule/af-project-capsule.component';
+import { AfUniversityProjectCapsuleComponent } from './af-university-project-capsule/af-university-project-capsule.component';
+import { AfShowMoreShowLess } from './af-show-more-show-less/af-show-more-show-less.component';
+import { AfResourceComponent } from './af-resource/af-resource.component';
+import { AfImageComponent } from './af-image/af-image.component';
+import { AfWebsiteLinkComponent } from './af-website-link/af-website-link.component';
+import { MatButtonModule } from '@angular/material/button';
+import { AfButtonComponent } from './af-button/af-button.component';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -35,11 +39,15 @@ import { AfShowMoreShowLess } from 'src/lib/components/af-show-more-show-less/af
     AfResourceComponent,
     AfImageComponent,
     AfWebsiteLinkComponent,
+    AfButtonComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+    MatSlideToggleModule,
+    MatButtonModule,
+    MatCardModule,
     RouterModule.forRoot([
       { path: 'home', component: LandingPageComponent },
       { path: 'study-record', component: StudyRecordComponent },
