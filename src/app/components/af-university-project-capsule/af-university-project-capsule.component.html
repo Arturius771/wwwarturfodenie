@@ -1,19 +1,13 @@
-<h3>{{ course.title }}</h3>
+<h2>{{ course.title }}</h2>
 at
 <app-af-website-link [website]="course.link"></app-af-website-link>:
 <ul>
   <li *ngFor="let module of course.modules">
-    <div>
-      <p class="module_code" *ngIf="module.module_code">
-        {{ module.module_code }}
-      </p>
-      <p class="title" *ngIf="module.title && module.module_code">
-        {{ module.title }}
-      </p>
-      <p class="module_code" *ngIf="module.title && !module.module_code">
-        {{ module.title }}
-      </p>
-    </div>
+    <span
+      ><h3 class="module_code" *ngIf="module.module_code">
+        {{ module.module_code }}:&nbsp;{{ module.title }}
+      </h3>
+    </span>
     <app-af-website-link
       *ngIf="module.github"
       [website]="module.github"
@@ -24,38 +18,30 @@ at
     ></app-af-website-link>
     <p *ngIf="module.description">{{ module.description }}</p>
     <div class="grid">
-      <ul>
-        <p *ngIf="module.assessments">
-          <u>Projects:</u>
-          <li *ngFor="let assessment of module.assessments">
-            <app-af-show-more-show-less
-              [text]="assessment.assessment_title"
-              [content]="assessment.description"
-            ></app-af-show-more-show-less>
-          </li>
-        </p>
+      <ul *ngIf="module.assessments">
+        <h3>Projects:</h3>
+        <li *ngFor="let assessment of module.assessments">
+          <app-af-show-more-show-less
+            [text]="assessment.assessment_title"
+            [content]="assessment.description"
+          ></app-af-show-more-show-less>
+        </li>
       </ul>
       <ul *ngIf="module.module_resources">
-        <p>
-          <u>Resources:</u>
-          <li *ngFor="let resource of module.module_resources">
-            <app-af-resource [resource]="resource"></app-af-resource>
-          </li>
-        </p>
+        <h3>Resources:</h3>
+        <li *ngFor="let resource of module.module_resources">
+          <app-af-resource [resource]="resource"></app-af-resource>
+        </li>
       </ul>
       <ul *ngIf="module.module_software">
-        <p>
-          <u>Software:</u>
-          <li *ngFor="let resource of module.module_software">
-            <app-af-resource [resource]="resource"></app-af-resource>
-          </li>
-        </p>
+        <h3>Software:</h3>
+        <li *ngFor="let resource of module.module_software">
+          <app-af-resource [resource]="resource"></app-af-resource>
+        </li>
       </ul>
       <ul *ngIf="module.module_result">
-        <p>
-          <u>Module Result:</u>
-          <li>{{ module.module_result }}</li>
-        </p>
+        <h3>Module Result:</h3>
+        <li>{{ module.module_result }}</li>
       </ul>
     </div>
   </li>
