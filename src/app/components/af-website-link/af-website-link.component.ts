@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { WebsiteLink } from 'src/app/models/website-link';
 
 @Component({
@@ -6,16 +6,6 @@ import { WebsiteLink } from 'src/app/models/website-link';
   templateUrl: './af-website-link.component.html',
   styleUrls: ['./af-website-link.component.less'],
 })
-export class AfWebsiteLinkComponent implements OnInit {
+export class AfWebsiteLinkComponent {
   @Input() website!: WebsiteLink;
-
-  ngOnInit() {
-    this.setWebsiteTitleIfMissing();
-  }
-
-  private setWebsiteTitleIfMissing() {
-    if (!this.website.title) {
-      this.website.title = 'Website';
-    }
-  }
 }

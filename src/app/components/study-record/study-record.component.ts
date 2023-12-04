@@ -1,5 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Store } from '@ngrx/store';
 import { Course } from 'src/app/models/course';
+import * as StudyRecordActions from './study-record.actions';
+import { selectStudyRecords } from './study-record.selectors';
+import { Observable, filter, map, of, tap } from 'rxjs';
 
 // Example module:
 // tm111: Module = {
@@ -9,10 +13,10 @@ import { Course } from 'src/app/models/course';
 //   github: '',
 //
 //   module_code: 'TM111',
-//   assessments: [Assessment],
+//   assessments: Assessment[],
 //   module_result: 'Distinction',
-//   module_resources: [Book],
-//   module_software: [Book],
+//   module_resources: Book[],
+//   module_software: Book[],
 // };
 
 @Component({
@@ -20,7 +24,13 @@ import { Course } from 'src/app/models/course';
   templateUrl: './study-record.component.html',
   styleUrls: ['./study-record.component.less'],
 })
-export class StudyRecordComponent {
+export class StudyRecordComponent implements OnInit {
+  constructor(private store: Store) {}
+
+  computing_it$!: Observable<Course>;
+  ibat$!: Observable<Course>;
+  unity$!: Observable<Course>;
+
   computing_it_course: Course = {
     title: 'Computing and IT BSc',
     institution: 'The Open University',
@@ -35,6 +45,7 @@ export class StudyRecordComponent {
           'A flexible project module that can be based on any of the previous topics covered throughout the course. My project was applying machine learning techniques to detect accessibility errors in source code. This involved trialing different approaches and evaluating their perfomance, and iterating further on the most promising results.',
         link: {
           url: 'https://www.open.ac.uk/courses/qualifications/details/tm470?orig=q62',
+          title: 'Website',
         },
         module_code: 'TM470',
         module_result: 'Awaiting Results',
@@ -52,6 +63,7 @@ export class StudyRecordComponent {
           'Comprehensive AI and ML module with blocks on Artificial Neural Networks, Convolutional Neural Networks, Recurrent Neural Networks, Autoencoders, model analysis and application, as well as ethical issues. Mathematical topics such as differentiation, integration, and linear algebra were covered so that those techniques could be applied when training and optimising machine learning models.',
         link: {
           url: 'https://www.open.ac.uk/courses/qualifications/details/tm358',
+          title: 'Website',
         },
         module_code: 'TM358',
         module_result: 'Grade 2 Pass',
@@ -73,6 +85,7 @@ export class StudyRecordComponent {
           'Software system development as an engineering activity, modelling software systems (UML), Agile and non-Agile approaches, requirements engineering (functional/non-functional types, relationship between requirements and testing), use case models, business domain modelling, structural modelling (conceptual models and object/class models, relationships/associations, constraints/invariants), dynamic modelling, software architectures, design patterns, quality requirements.',
         link: {
           url: 'https://www.open.ac.uk/courses/modules/tm354',
+          title: 'Website',
         },
         module_code: 'TM354',
         assessments: [
@@ -112,6 +125,7 @@ export class StudyRecordComponent {
           'Focused on DBMS architectures and implementation, in both relational (PostgreSQL) and NoSQL contexts (MongoDB, a document database). The module begins with the data analysis pipeline, and relevant technologies such as pandas for tabular visualisations and seaborn for graphs. Then more in depth relational database work which involved data modelling, normalisation, subqueries/views, and concurrency. The NoSQL portion of the module focused on document databases with the appropriate data analysis techniques, as well as scaling the databases (replication/sharding/distributed transactions). The module concluded with data warehousing, data mining, and linked semantic web dataset interactions (eg. OWL and RDF languages).',
         link: {
           url: 'https://www.open.ac.uk/courses/modules/tm351',
+          title: 'Website',
         },
         module_code: 'TM351',
         module_result: 'Grade 2 Pass',
@@ -208,6 +222,7 @@ export class StudyRecordComponent {
         ],
         link: {
           url: 'https://www.open.ac.uk/courses/modules/tt284',
+          title: 'Website',
         },
       },
       {
@@ -251,6 +266,7 @@ export class StudyRecordComponent {
         ],
         link: {
           url: 'https://www.open.ac.uk/courses/modules/tm255',
+          title: 'Website',
         },
       },
       {
@@ -259,6 +275,7 @@ export class StudyRecordComponent {
           'Algorithms and complexity (Big-O notation), runtime analysis, data structures (lists, stacks, queues, dictionaries, sets, trees, graphs, search algorithms, recursion, greedy). Python and Jupyter Notebooks. Logic, theoretical computer science, and computability (eg. P != NP, halting problem etc). Content was covered through practical Python programming exercises and Notebooks projects.',
         link: {
           url: 'https://www.open.ac.uk/courses/modules/m269',
+          title: 'Website',
         },
         module_code: 'M269',
         assessments: [
@@ -312,6 +329,7 @@ export class StudyRecordComponent {
           'Fundamentals of object-oriented programming taught with the BlueJ IDE and Java.',
         link: {
           url: 'https://www.open.ac.uk/courses/modules/m250',
+          title: 'Website',
         },
         module_code: 'M250',
         assessments: [
@@ -372,6 +390,7 @@ export class StudyRecordComponent {
           'Networking, operating systems (Linux, architectures and virtualisation), robotics and AI',
         link: {
           url: 'https://www.open.ac.uk/courses/modules/tm129',
+          title: 'Website',
         },
         module_code: 'TM129',
         module_result: 'Grade 2 Pass',
@@ -407,6 +426,7 @@ export class StudyRecordComponent {
           'Block 1: Computer hardware and architecture, data management, cloud computing, mobile devices - Block 2: Python programming and algorithms - Block 3: Security, hacking, surveillance',
         link: {
           url: 'https://www.open.ac.uk/courses/modules/tm112',
+          title: 'Website',
         },
         module_code: 'TM112',
         module_result: 'Distinction',
@@ -425,6 +445,7 @@ export class StudyRecordComponent {
         description: 'IT fundamentals, programming, and networking.',
         link: {
           url: 'https://www.open.ac.uk/courses/modules/tm111',
+          title: 'Website',
         },
         module_code: 'TM111',
         module_result: 'Distinction',
@@ -434,7 +455,7 @@ export class StudyRecordComponent {
   ibat_course: Course = {
     title: 'Diploma in Computer Programming',
     institution: 'IBAT',
-    link: { url: 'https://www.ibat.ie/' },
+    link: { url: 'https://www.ibat.ie/', title: 'IBAT' },
     modules: [
       {
         title: 'Diploma in Computer Programming',
@@ -442,6 +463,7 @@ export class StudyRecordComponent {
           'Eleven week course on OOP fundamentals in Java. Skills such as development environment management, CLI compilation, and NetBeans IDE were taught. Computational problem solving and algorithms were introduced.',
         link: {
           url: 'https://www.ibat.ie/courses/java-programming-diploma.html',
+          title: 'Website',
         },
         assessments: [
           {
@@ -472,6 +494,7 @@ export class StudyRecordComponent {
           'A self paced course to introduce game development through a set of development and project management activities.',
         link: {
           url: 'https://learn.unity.com/pathway/junior-programmer',
+          title: 'Website',
         },
         module_result: 'Ongoing',
       },
@@ -481,8 +504,33 @@ export class StudyRecordComponent {
           'An official course on creating virtual reality applications using Unity.',
         link: {
           url: 'https://learn.unity.com/course/create-with-vr',
+          title: 'Website',
         },
       },
     ],
   };
+
+  ngOnInit(): void {
+    this.addStudyRecord(this.computing_it_course);
+    this.addStudyRecord(this.ibat_course);
+    this.addStudyRecord(this.unity_course);
+
+    setTimeout(() => {}, 500);
+
+    this.store
+      .select(selectStudyRecords)
+      .pipe(
+        tap((courses) => console.log(courses)),
+        filter((courses) => courses && courses.length > 0)
+      )
+      .subscribe((course) => {
+        this.computing_it$ = of(course[0]);
+        this.ibat$ = of(course[1]);
+        this.unity$ = of(course[2]);
+      });
+  }
+
+  addStudyRecord(studyRecord: Course) {
+    this.store.dispatch(StudyRecordActions.addStudyRecord({ studyRecord }));
+  }
 }

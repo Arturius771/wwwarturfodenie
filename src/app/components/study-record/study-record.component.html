@@ -1,10 +1,13 @@
 <h1>Study Record</h1>
 <app-af-university-projects-capsule
-  [course]="computing_it_course"
+  *ngIf="computing_it$ | async as course"
+  [course]="course"
 ></app-af-university-projects-capsule>
 <app-af-university-projects-capsule
-  [course]="ibat_course"
+  *ngIf="ibat$ | async as course"
+  [course]="course"
 ></app-af-university-projects-capsule>
 <app-af-university-projects-capsule
-  [course]="unity_course"
+  *ngIf="unity$ | async as course"
+  [course]="course"
 ></app-af-university-projects-capsule>
