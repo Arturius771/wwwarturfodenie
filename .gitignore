@@ -47,4 +47,4 @@ testem.log
 Thumbs.db
 
 # Tokens
-token.ts
+token.json

@@ -6,4 +6,5 @@ export interface Course {
   institution: string;
   modules: Module[];
   link: WebsiteLink;
+  result?: string;
 }

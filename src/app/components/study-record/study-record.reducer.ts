@@ -23,7 +23,7 @@ export const studyRecordReducer = createReducer(
     return {
       ...state,
       studyRecords: state.studyRecords.filter((course) =>
-        course.modules.forEach((module) => module.module_code !== moduleId)
+        course.modules.forEach((module) => module.code !== moduleId)
       ),
     };
   })

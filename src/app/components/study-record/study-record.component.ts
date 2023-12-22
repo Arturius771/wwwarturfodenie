@@ -12,11 +12,11 @@ import { Observable, filter, map, of, tap } from 'rxjs';
 //   url: 'https://www.open.ac.uk/courses/modules/tm111',
 //   github: '',
 //
-//   module_code: 'TM111',
+//   code: 'TM111',
 //   assessments: Assessment[],
-//   module_result: 'Distinction',
-//   module_resources: Book[],
-//   module_software: Book[],
+//   result: 'Distinction',
+//   resources: Book[],
+//   software: Book[],
 // };
 
 @Component({
@@ -38,25 +38,8 @@ export class StudyRecordComponent implements OnInit {
       url: 'https://www.open.ac.uk/',
       title: 'The Open University',
     },
+    result: '2:1 Honours',
     modules: [
-      {
-        title: 'The Computing and IT Project',
-        description:
-          'A flexible project module that can be based on any of the previous topics covered throughout the course. My project was applying machine learning techniques to detect accessibility errors in source code. This involved trialing different approaches and evaluating their perfomance, and iterating further on the most promising results.',
-        link: {
-          url: 'https://www.open.ac.uk/courses/qualifications/details/tm470?orig=q62',
-          title: 'Website',
-        },
-        module_code: 'TM470',
-        module_result: 'Awaiting Results',
-        module_software: [
-          { title: 'Azure DevOps' },
-          { title: 'Git', url: 'https://git-scm.com/' },
-          { title: 'TensorFlow' },
-          { title: 'PyTorch', url: 'https://pytorch.org/' },
-          { title: 'Microsoft Office' },
-        ],
-      },
       {
         title: 'Machine Learning and Artificial Intelligence',
         description:
@@ -65,10 +48,10 @@ export class StudyRecordComponent implements OnInit {
           url: 'https://www.open.ac.uk/courses/qualifications/details/tm358',
           title: 'Website',
         },
-        module_code: 'TM358',
-        module_result: 'Grade 2 Pass',
-        module_software: [{ title: 'TensorFlow' }],
-        module_resources: [
+        code: 'TM358',
+        result: 'Grade 2 Pass',
+        software: [{ title: 'TensorFlow' }],
+        resources: [
           {
             title:
               'Data Mining: Practical Machine Learning Tools and Techniques',
@@ -87,16 +70,29 @@ export class StudyRecordComponent implements OnInit {
           url: 'https://www.open.ac.uk/courses/modules/tm354',
           title: 'Website',
         },
-        module_code: 'TM354',
+        code: 'TM354',
         assessments: [
           {
-            assessment_title: 'TMA01',
+            title: 'TMA01',
             description:
               'Use case models and user stories, activity diagrams, Agile methodologies, Volere templates.',
+            score: 98,
+          },
+          {
+            title: 'TMA02',
+            description:
+              'Problem domain modelling, analysis modelling, associations/multiplicities, pre and post conditions of system operations.',
+            score: 92,
+          },
+          {
+            title: 'TMA03',
+            description:
+              'Enterprise system architecture (Jakarta), design patterns, testing',
+            score: 95,
           },
         ],
-        module_result: 'Grade 2 Pass',
-        module_software: [
+        result: 'Grade 2 Pass',
+        software: [
           { title: 'diagrams.net' },
           { title: 'UMLet', url: 'https://www.umlet.com/' },
           {
@@ -110,7 +106,7 @@ export class StudyRecordComponent implements OnInit {
             author: 'Apache',
           },
         ],
-        module_resources: [
+        resources: [
           {
             title:
               'Design Patterns: Elements of Reusable Object-Oriented Software',
@@ -127,9 +123,9 @@ export class StudyRecordComponent implements OnInit {
           url: 'https://www.open.ac.uk/courses/modules/tm351',
           title: 'Website',
         },
-        module_code: 'TM351',
-        module_result: 'Grade 2 Pass',
-        module_software: [
+        code: 'TM351',
+        result: 'Grade 2 Pass',
+        software: [
           { title: 'PostgreSQL' },
           { title: 'MongoDB' },
           { title: 'Docker' },
@@ -137,7 +133,7 @@ export class StudyRecordComponent implements OnInit {
           { title: 'pandas' },
           { title: 'PyMongo' },
         ],
-        module_resources: [
+        resources: [
           {
             title: 'MongoDB: The Definitive Guide',
             author: 'Bradshaw S., Brazil E., and Chodorow K.',
@@ -151,33 +147,51 @@ export class StudyRecordComponent implements OnInit {
         ],
       },
       {
-        module_code: 'TT284',
+        title: 'The Computing and IT Project',
+        description:
+          'A flexible project module that can be based on any of the previous topics covered throughout the course. My project was applying machine learning techniques to detect accessibility errors in source code. This involved trialing different approaches and evaluating their perfomance, and iterating further on the most promising results.',
+        link: {
+          url: 'https://www.open.ac.uk/courses/qualifications/details/tm470?orig=q62',
+          title: 'Website',
+        },
+        code: 'TM470',
+        result: 'Grade 3',
+        software: [
+          { title: 'Azure DevOps' },
+          { title: 'Git', url: 'https://git-scm.com/' },
+          { title: 'TensorFlow' },
+          { title: 'PyTorch', url: 'https://pytorch.org/' },
+          { title: 'Microsoft Office' },
+        ],
+      },
+      {
+        code: 'TT284',
         title: 'Web Technologies',
         description:
           'Comprehensive web technology module from tech fundamentals (HTML, CSS) to topics such as accessibility, security, web standards, and architectures (Client-Server etc). Web APIs/HTTP/REST/AJAX and programming languages (JavaScript and PHP - SPAs, SSGs, SSRs) are covered in depth in different scenarios to show various use cases. ',
         assessments: [
           {
-            assessment_title: 'TMA01',
+            title: 'TMA01',
             description: 'Museum landing page and report (HTML, CSS)',
           },
           {
-            assessment_title: 'TMA02',
+            title: 'TMA02',
             description:
               'Guesthouse CRUD web application and report (PHP, JavaScript, SQL, Regex, HTML, CSS)',
           },
           {
-            assessment_title: 'TMA03',
+            title: 'TMA03',
             description:
               'Guesthouse photo diary web application (JavaScript, HTML, CSS)',
           },
           {
-            assessment_title: 'EMA',
+            title: 'EMA',
             description:
               'Walking Club website project (design, implementation, testing) (PHP, JavaScript, HTML, CSS)',
           },
         ],
-        module_result: 'Grade 2 Pass',
-        module_resources: [
+        result: 'Grade 2 Pass',
+        resources: [
           {
             title: 'JavaScript The Definitive Guide',
             author: 'Flanagan, D.',
@@ -196,7 +210,7 @@ export class StudyRecordComponent implements OnInit {
           },
           { title: 'PHP Documentation', url: 'https://www.php.net/docs.php' },
         ],
-        module_software: [
+        software: [
           {
             title: 'Visual Studio Code',
             author: 'Microsoft',
@@ -226,33 +240,33 @@ export class StudyRecordComponent implements OnInit {
         },
       },
       {
-        module_code: 'TM255',
+        code: 'TM255',
         title: 'Communication and Information Technologies',
         description:
           'General networking and communications module. Information storage, radio transmission and mobile communication (IoT, 1-5G etc) and security/error control are covered in Block 1. Block 2 covered general interaction design and team collaboration, human-computer interactions with a focus on user interfaces and relevant heuristics. Block 3 covered cybersecurity, encryption, and ethical concerns related to biometric information processing and storage as well as the societal risks of artificial intelligence.',
         assessments: [
           {
-            assessment_title: 'TMA01',
+            title: 'TMA01',
             description:
               '5G, asynchronous communication technologies, access point configuration (Packet Tracer)',
           },
           {
-            assessment_title: 'TMA02',
+            title: 'TMA02',
             description:
               'Hotel Website Group Project (design, implementation, reflection) (WordPress)',
           },
           {
-            assessment_title: 'TMA03',
+            title: 'TMA03',
             description:
               'Ethical and Legal Frameworks of IT, Biometric Authentication Systems report (written assessments)',
           },
           {
-            assessment_title: 'EMA',
+            title: 'EMA',
             description: 'Quantum Cryptography Information Website (WordPress)',
           },
         ],
-        module_result: 'Distinction',
-        module_software: [
+        result: 'Distinction',
+        software: [
           {
             title: 'Cisco Packet Tracer',
             author: 'Cisco',
@@ -277,26 +291,26 @@ export class StudyRecordComponent implements OnInit {
           url: 'https://www.open.ac.uk/courses/modules/m269',
           title: 'Website',
         },
-        module_code: 'M269',
+        code: 'M269',
         assessments: [
           {
-            assessment_title: 'TMA01',
+            title: 'TMA01',
             description:
               'Part 1: Sequence data types, iterative algorithms, and algorithm complexity - Part 2: Stacks, queues, and priority Queues (Python)',
           },
           {
-            assessment_title: 'TMA02',
+            title: 'TMA02',
             description:
               'Binary Trees, graphs, recursive functions and graphs, greedy algorithms (Python)',
           },
           {
-            assessment_title: 'TMA03',
+            title: 'TMA03',
             description:
               'Sets, bags, maps (Java) and logic (Propositional/Predicate) and well Formed Formulas, truth tables, Equivalence Problem essay (Python, SQL)',
           },
         ],
-        module_result: 'Distinction',
-        module_resources: [
+        result: 'Distinction',
+        resources: [
           {
             title: 'Algorithms, data structures and computability',
             author: 'Wermelinger, M.',
@@ -315,7 +329,7 @@ export class StudyRecordComponent implements OnInit {
             url: 'https://docs.jupyter.org/en/latest/#',
           },
         ],
-        module_software: [
+        software: [
           {
             title: 'Anaconda',
             author: 'Continuum analytics',
@@ -331,25 +345,25 @@ export class StudyRecordComponent implements OnInit {
           url: 'https://www.open.ac.uk/courses/modules/m250',
           title: 'Website',
         },
-        module_code: 'M250',
+        code: 'M250',
         assessments: [
           {
-            assessment_title: 'TMA01',
+            title: 'TMA01',
             description: 'Book Library Manager (Java)',
           },
           {
-            assessment_title: 'TMA02',
+            title: 'TMA02',
             description:
               'Rock Paper Scissors game, Dictionary HashMaps and HashSets, SIR Infection Rate model (Java)',
           },
           {
-            assessment_title: 'TMA03',
+            title: 'TMA03',
             description:
               'Roller Coaster Manager, Sailing Club and Boat Race Manager - Member/organisation project that could read/write CSV files (Java)',
           },
         ],
-        module_result: 'Distinction',
-        module_resources: [
+        result: 'Distinction',
+        resources: [
           {
             title: 'Objects First with Java',
             author: 'Barnes, D. J., Kölling M.',
@@ -365,7 +379,7 @@ export class StudyRecordComponent implements OnInit {
             article_title: 'Java SE 16 Edition',
           },
         ],
-        module_software: [
+        software: [
           {
             title: 'BlueJ',
             author: 'Kölling M.',
@@ -375,9 +389,9 @@ export class StudyRecordComponent implements OnInit {
       },
       {
         title: 'Discovering Mathematics',
-        module_code: 'MU123',
-        module_result: 'Distinction',
-        module_resources: [
+        code: 'MU123',
+        result: 'Distinction',
+        resources: [
           {
             title: 'Discovering Mathematics Books: A, B, C, D',
             author: 'Various Authors',
@@ -392,9 +406,9 @@ export class StudyRecordComponent implements OnInit {
           url: 'https://www.open.ac.uk/courses/modules/tm129',
           title: 'Website',
         },
-        module_code: 'TM129',
-        module_result: 'Grade 2 Pass',
-        module_resources: [
+        code: 'TM129',
+        result: 'Grade 2 Pass',
+        resources: [
           {
             title: 'Microsoft Networking Essentials',
             author: 'Gibson, D.',
@@ -402,7 +416,7 @@ export class StudyRecordComponent implements OnInit {
           },
           { title: 'I, Robot', author: 'Asimov, I.', year: 1967 },
         ],
-        module_software: [
+        software: [
           {
             title: 'VirtualBox',
             author: 'Oracle',
@@ -428,17 +442,15 @@ export class StudyRecordComponent implements OnInit {
           url: 'https://www.open.ac.uk/courses/modules/tm112',
           title: 'Website',
         },
-        module_code: 'TM112',
-        module_result: 'Distinction',
-        module_resources: [
+        code: 'TM112',
+        result: 'Distinction',
+        resources: [
           {
             title: 'Python Documentation',
             url: 'https://docs.python.org/3.8/',
           },
         ],
-        module_software: [
-          { title: 'Python 3.8', url: 'https://www.python.org/' },
-        ],
+        software: [{ title: 'Python 3.8', url: 'https://www.python.org/' }],
       },
       {
         title: 'Introduction to Computing and Information Technology 1',
@@ -447,8 +459,8 @@ export class StudyRecordComponent implements OnInit {
           url: 'https://www.open.ac.uk/courses/modules/tm111',
           title: 'Website',
         },
-        module_code: 'TM111',
-        module_result: 'Distinction',
+        code: 'TM111',
+        result: 'Distinction',
       },
     ],
   };
@@ -467,13 +479,13 @@ export class StudyRecordComponent implements OnInit {
         },
         assessments: [
           {
-            assessment_title: 'Final Project',
+            title: 'Final Project',
             description:
               'Java BMI calculator, with GUI, exception handling, and data validation.',
           },
         ],
-        module_result: 'Distinction',
-        module_software: [
+        result: 'Distinction',
+        software: [
           {
             title: 'NetBeans',
             author: 'Apache',
@@ -496,7 +508,7 @@ export class StudyRecordComponent implements OnInit {
           url: 'https://learn.unity.com/pathway/junior-programmer',
           title: 'Website',
         },
-        module_result: 'Ongoing',
+        result: 'Ongoing',
       },
       {
         title: 'Create With VR',

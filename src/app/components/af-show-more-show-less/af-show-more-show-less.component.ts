@@ -7,7 +7,6 @@ import { Component, Input } from '@angular/core';
 })
 export class AfShowMoreShowLess {
   @Input() text = 'Button';
-  @Input() content?: string;
   showContent = false;
 
   onClick() {

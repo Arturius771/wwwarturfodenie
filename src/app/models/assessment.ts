@@ -1,5 +1,5 @@
 export interface Assessment {
-  assessment_title: string;
-  assessment_score?: number;
+  title: string;
+  score?: number;
   description: string;
 }

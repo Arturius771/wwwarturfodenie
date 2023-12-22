@@ -3,9 +3,9 @@ import { Book } from './book';
 import { Project } from './project';
 
 export interface Module extends Project {
-  module_code?: string;
+  code?: string;
   assessments?: Array<Assessment>;
-  module_result?: number | string;
-  module_resources?: Array<Book>;
-  module_software?: Array<Book>;
+  result?: number | string;
+  resources?: Array<Book>;
+  software?: Array<Book>;
 }
