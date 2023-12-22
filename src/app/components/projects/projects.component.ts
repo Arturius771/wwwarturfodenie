@@ -38,19 +38,9 @@ export class ProjectsComponent {
     description: 'Volt Europa Tech Team developer. Vue TS framework.',
     link: { url: 'https://www.volteuropa.org/', title: 'Volt Website' },
   };
-  lment: Project = {
-    title: 'LMent',
-    description:
-      'WIP network analysis and logging project. Pronounced element.',
-    link: { url: 'http://lment.ie/', title: 'Website' },
-    github: {
-      url: 'https://github.com/Arturius771/LMent',
-      title: 'GitHub',
-    },
-  };
   phasmocrew: Project = {
     title: 'PhasmoCrew Website',
-    description: '',
+    description: 'Website developer. Also working on our unnanounced game',
     link: { url: 'http://www.phasmocrew.org/#/home', title: 'Website' },
     github: {
       url: 'https://github.com/Arturius771/wwwphasmocreworg-website',
