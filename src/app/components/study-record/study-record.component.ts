@@ -454,7 +454,8 @@ export class StudyRecordComponent implements OnInit {
       },
       {
         title: 'Introduction to Computing and Information Technology 1',
-        description: 'IT fundamentals, programming, and networking.',
+        description:
+          'IT fundamentals, programming, and networking. Digital foundations and technologies were covered, including XML and binary as well as databases, including big data and cloud computing concepts. Most topics included a relevant socio-technical example to emphasise the connection between digital technology and society.',
         link: {
           url: 'https://www.open.ac.uk/courses/modules/tm111',
           title: 'Website',
