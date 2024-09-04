@@ -23,7 +23,6 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { StudyRecordComponent } from './components/study-record/study-record.component';
 import { StoreModule } from '@ngrx/store';
-import { studyRecordReducer } from './components/study-record/study-record.reducer';
 
 @NgModule({
   declarations: [
@@ -49,7 +48,7 @@ import { studyRecordReducer } from './components/study-record/study-record.reduc
     AppRoutingModule,
     MatSlideToggleModule,
     MatButtonModule,
-    StoreModule.forRoot({ studyRecord: studyRecordReducer }),
+    StoreModule.forRoot(),
     MatCardModule,
     RouterModule.forRoot([
       { path: 'home', component: LandingPageComponent },

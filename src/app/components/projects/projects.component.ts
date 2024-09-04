@@ -47,4 +47,12 @@ export class ProjectsComponent {
       title: 'GitHub',
     },
   };
+
+  projects: Project[] = [
+    this.maths,
+    this.arturfodenie,
+    this.akamai,
+    this.volt,
+    this.phasmocrew,
+  ];
 }

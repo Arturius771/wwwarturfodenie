@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Course } from 'src/app/models/course';
-import * as StudyRecordActions from './study-record.actions';
-import { selectStudyRecords } from './study-record.selectors';
-import { Observable, filter, map, of, tap } from 'rxjs';
 
 // Example module:
 // tm111: Module = {
@@ -24,12 +21,8 @@ import { Observable, filter, map, of, tap } from 'rxjs';
   templateUrl: './study-record.component.html',
   styleUrls: ['./study-record.component.less'],
 })
-export class StudyRecordComponent implements OnInit {
+export class StudyRecordComponent {
   constructor(private store: Store) {}
-
-  computing_it$!: Observable<Course>;
-  ibat$!: Observable<Course>;
-  unity$!: Observable<Course>;
 
   computing_it_course: Course = {
     title: 'Computing and IT BSc',
@@ -523,27 +516,9 @@ export class StudyRecordComponent implements OnInit {
     ],
   };
 
-  ngOnInit(): void {
-    this.addStudyRecord(this.computing_it_course);
-    this.addStudyRecord(this.ibat_course);
-    this.addStudyRecord(this.unity_course);
-
-    setTimeout(() => {}, 500);
-
-    this.store
-      .select(selectStudyRecords)
-      .pipe(
-        tap((courses) => console.log(courses)),
-        filter((courses) => courses && courses.length > 0)
-      )
-      .subscribe((course) => {
-        this.computing_it$ = of(course[0]);
-        this.ibat$ = of(course[1]);
-        this.unity$ = of(course[2]);
-      });
-  }
-
-  addStudyRecord(studyRecord: Course) {
-    this.store.dispatch(StudyRecordActions.addStudyRecord({ studyRecord }));
-  }
+  courses: Course[] = [
+    this.computing_it_course,
+    this.ibat_course,
+    this.unity_course,
+  ];
 }

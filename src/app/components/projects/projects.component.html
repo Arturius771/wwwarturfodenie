@@ -1,9 +1,7 @@
 <h1>Projects</h1>
-<app-project-capsule [project]="maths"></app-project-capsule>
-<app-project-capsule [project]="arturfodenie"></app-project-capsule>
-<app-project-capsule [project]="akamai"></app-project-capsule>
-<app-project-capsule [project]="volt"></app-project-capsule>
-<app-project-capsule [project]="phasmocrew"></app-project-capsule>
+<div *ngFor="let project of projects">
+  <app-project-capsule [project]="project"></app-project-capsule>
+</div>
 <h3>More of my projects are on GitHub</h3>
 <a class="featured_projects" href="https://github.com/Arturius771"
   ><img
