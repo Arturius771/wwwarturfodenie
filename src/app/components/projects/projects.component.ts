@@ -10,7 +10,7 @@ export class ProjectsComponent {
   maths: Project = {
     title: 'maths',
     description:
-      'A python math library that outputs formatted instructions on how to compute mathematical formulas and expressions. Wish I named it m.',
+      'A python math library that outputs formatted instructions on how to compute mathematical formulas and expressions. Wish I named it mafs.',
     link: {
       url: 'https://pypi.org/project/maths/#description',
       title: 'pip install maths',
