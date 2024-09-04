@@ -1,4 +1,4 @@
 <app-button (click)="onClick()">
-  <span>{{ this.showContent ? "Hide" : "Show" }} {{ text }}</span>
+  <span>{{ this.contentShown ? "Hide" : "Show" }} {{ text }}</span>
 </app-button>
-<div class="border" *ngIf="this.showContent"><ng-content></ng-content></div>
+<div class="border" *ngIf="this.contentShown"><ng-content></ng-content></div>

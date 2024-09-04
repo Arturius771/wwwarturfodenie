@@ -7,9 +7,9 @@ import { Component, Input } from '@angular/core';
 })
 export class ShowMoreShowLess {
   @Input() text = 'Button';
-  showContent = false;
+  contentShown = false;
 
   onClick() {
-    this.showContent = !this.showContent;
+    this.contentShown = !this.contentShown;
   }
 }
