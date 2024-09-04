@@ -6,16 +6,16 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatButtonModule } from '@angular/material/button';
-import { AfButtonComponent } from './components/af-button/af-button.component';
+import { ButtonComponent } from './components/button/button.component';
 import { MatCardModule } from '@angular/material/card';
 import { HeaderComponent } from './components/header/header.component';
 import { RouterModule } from '@angular/router';
-import { AfImageComponent } from './components/af-image/af-image.component';
-import { AfProjectCapsuleComponent } from './components/af-project-capsule/af-project-capsule.component';
-import { AfResourceComponent } from './components/af-resource/af-resource.component';
-import { AfShowMoreShowLess } from './components/af-show-more-show-less/af-show-more-show-less.component';
-import { AfUniversityProjectCapsuleComponent } from './components/af-university-project-capsule/af-university-project-capsule.component';
-import { AfWebsiteLinkComponent } from './components/af-website-link/af-website-link.component';
+import { ImageComponent } from './components/image/image.component';
+import { ProjectCapsuleComponent } from './components/project-capsule/project-capsule.component';
+import { ResourceComponent } from './components/resource/resource.component';
+import { ShowMoreShowLess } from './components/show-more-show-less/show-more-show-less.component';
+import { UniversityProjectCapsuleComponent } from './components/university-project-capsule/university-project-capsule.component';
+import { WebsiteLinkComponent } from './components/website-link/website-link.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { MainContentComponent } from './components/main-content/main-content.component';
@@ -34,14 +34,14 @@ import { studyRecordReducer } from './components/study-record/study-record.reduc
     StudyRecordComponent,
     ProjectsComponent,
     NavbarComponent,
-    AfProjectCapsuleComponent,
-    AfUniversityProjectCapsuleComponent,
-    AfShowMoreShowLess,
+    ProjectCapsuleComponent,
+    UniversityProjectCapsuleComponent,
+    ShowMoreShowLess,
     LandingPageComponent,
-    AfResourceComponent,
-    AfImageComponent,
-    AfWebsiteLinkComponent,
-    AfButtonComponent,
+    ResourceComponent,
+    ImageComponent,
+    WebsiteLinkComponent,
+    ButtonComponent,
   ],
   imports: [
     BrowserModule,

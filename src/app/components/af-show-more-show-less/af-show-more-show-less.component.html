@@ -1,5 +1,0 @@
-<app-af-button (click)="onClick()">
-  <span *ngIf="this.showContent">Hide {{ text }}</span>
-  <span *ngIf="!this.showContent">Show {{ text }}</span>
-</app-af-button>
-<div class="border" *ngIf="this.showContent"><ng-content></ng-content></div>

@@ -4,7 +4,7 @@
   </h2>
   <h3 *ngIf="course.result">{{ course.result }}</h3>
   at
-  <app-af-website-link [website]="course.link"></app-af-website-link>:
+  <app-website-link [website]="course.link"></app-website-link>:
   <ul>
     <li *ngFor="let module of course.modules">
       <span
@@ -13,39 +13,39 @@
           ><span>&nbsp;{{ module.title }}</span>
         </h3>
       </span>
-      <app-af-website-link
+      <app-website-link
         *ngIf="module.github"
         [website]="module.github"
-      ></app-af-website-link>
-      <app-af-website-link
+      ></app-website-link>
+      <app-website-link
         *ngIf="module.link"
         [website]="module.link"
-      ></app-af-website-link>
+      ></app-website-link>
       <p *ngIf="module.description">{{ module.description }}</p>
       <div class="grid">
         <ul *ngIf="module.assessments">
           <h3>Projects:</h3>
           <li *ngFor="let assessment of module.assessments">
-            <app-af-show-more-show-less [text]="assessment.title"
+            <app-show-more-show-less [text]="assessment.title"
               ><span>{{ this.assessment.description }}</span>
               <ul *ngIf="this.assessment.score">
                 <li>
                   <span>Score: {{ this.assessment.score }}</span>
                 </li>
-              </ul></app-af-show-more-show-less
+              </ul></app-show-more-show-less
             >
           </li>
         </ul>
         <ul *ngIf="module.resources">
           <h3>Resources:</h3>
           <li *ngFor="let resource of module.resources">
-            <app-af-resource [resource]="resource"></app-af-resource>
+            <app-resource [resource]="resource"></app-resource>
           </li>
         </ul>
         <ul *ngIf="module.software">
           <h3>Software:</h3>
           <li *ngFor="let resource of module.software">
-            <app-af-resource [resource]="resource"></app-af-resource>
+            <app-resource [resource]="resource"></app-resource>
           </li>
         </ul>
         <ul *ngIf="module.result">

@@ -7,13 +7,13 @@ import { Project } from 'src/app/models/project';
   styleUrls: ['./projects.component.less'],
 })
 export class ProjectsComponent {
-  afmaths: Project = {
-    title: 'afmaths',
+  maths: Project = {
+    title: 'maths',
     description:
-      'A python math library that outputs formatted instructions on how to compute mathematical formulas and expressions. Wish I named it afmaf.',
+      'A python math library that outputs formatted instructions on how to compute mathematical formulas and expressions. Wish I named it m.',
     link: {
-      url: 'https://pypi.org/project/afmaths/#description',
-      title: 'pip install afmaths',
+      url: 'https://pypi.org/project/maths/#description',
+      title: 'pip install maths',
     },
   };
   arturfodenie: Project = {
@@ -21,7 +21,7 @@ export class ProjectsComponent {
     description:
       'Personal website, currently it is an Angular frontend SPA (previously PHP MPA) on an Apache webserver and MySQL database (Thinking of moving to MongoDB). It will eventually be a MEAN project. Content changes according to current mood. Currently it is a portfolio website of sorts, but usually it is updated to implement something I find interesting.',
     link: {
-      url: 'https://pypi.org/project/afmaths/#description',
+      url: 'https://pypi.org/project/maths/#description',
     },
     github: {
       url: 'https://github.com/Arturius771/__wwwarturfodenie-website',

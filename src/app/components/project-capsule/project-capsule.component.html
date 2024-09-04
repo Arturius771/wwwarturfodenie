@@ -1,10 +1,10 @@
 <h2>{{ project.title }}</h2>
 <p *ngIf="project.description">{{ project.description }}</p>
-<app-af-website-link
+<app-website-link
   *ngIf="project.github"
   [website]="project.github"
-></app-af-website-link>
-<app-af-website-link
+></app-website-link>
+<app-website-link
   *ngIf="project.link"
   [website]="project.link"
-></app-af-website-link>
+></app-website-link>
