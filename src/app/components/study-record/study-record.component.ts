@@ -299,7 +299,7 @@ export class StudyRecordComponent {
           {
             title: 'TMA03',
             description:
-              'Sets, bags, maps (Java) and logic (Propositional/Predicate) and well Formed Formulas, truth tables, Equivalence Problem essay (Python, SQL)',
+              'Sets, bags, maps, and logic (Propositional/Predicate) and well Formed Formulas, truth tables, Equivalence Problem essay (Python, SQL)',
           },
         ],
         result: 'Distinction',
