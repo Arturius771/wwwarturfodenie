@@ -6,10 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer.component.less'],
 })
 export class FooterComponent {
-  year = getYear();
-}
-
-function getYear(): number {
-  var year: number = new Date().getFullYear();
-  return year >= 2021 ? year : 2022;
+  public get year(): number {
+    return new Date().getFullYear();
+  }
 }
