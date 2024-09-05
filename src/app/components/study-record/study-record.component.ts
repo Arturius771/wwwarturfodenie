@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { Store } from '@ngrx/store';
+import { Component } from '@angular/core';
 import { Course } from 'src/app/models/course';
 
 // Example module:
@@ -22,7 +21,7 @@ import { Course } from 'src/app/models/course';
   styleUrls: ['./study-record.component.less'],
 })
 export class StudyRecordComponent {
-  constructor(private store: Store) {}
+  constructor() {}
 
   computing_it_course: Course = {
     title: 'Computing and IT BSc',
