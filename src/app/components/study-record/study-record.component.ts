@@ -515,9 +515,5 @@ export class StudyRecordComponent {
     ],
   };
 
-  courses: Course[] = [
-    this.computing_it_course,
-    this.ibat_course,
-    this.unity_course,
-  ];
+  courses: Course[] = [this.computing_it_course, this.ibat_course];
 }
