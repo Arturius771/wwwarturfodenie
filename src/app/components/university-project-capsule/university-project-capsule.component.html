@@ -4,7 +4,7 @@
   </h2>
   <h3 *ngIf="course.result">{{ course.result }}</h3>
   at
-  <app-website-link [website]="course.link"></app-website-link>:
+  <app-website-link [website]="website"></app-website-link>:
   <ul>
     <li *ngFor="let module of course.modules">
       <span

@@ -1,10 +1,9 @@
+import { Institution } from './institution';
 import { Module } from './module';
-import { WebsiteLink } from './website-link';
 
 export interface Course {
   title: string;
-  institution: string;
+  institution: Institution;
   modules: Module[];
-  link: WebsiteLink;
   result?: string;
 }

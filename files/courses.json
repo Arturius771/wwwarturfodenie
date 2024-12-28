@@ -1,10 +1,19 @@
 [
   {
+    "title": "Master of Space Engineering",
+    "institution": {
+      "name": "Technische Universität Berlin",
+      "link": { "url": "https://www.tu.berlin/en/" }
+    },
+    "modules": []
+  },
+  {
     "title": "Computing and IT BSc",
-    "institution": "The Open University",
-    "link": {
-      "url": "https://www.open.ac.uk/",
-      "title": "The Open University"
+    "institution": {
+      "name": "The Open University",
+      "link": {
+        "url": "https://www.open.ac.uk/"
+      }
     },
     "result": "2:1 Honours",
     "modules": [
@@ -409,8 +418,11 @@
   },
   {
     "title": "Diploma in Computer Programming",
-    "institution": "IBAT",
-    "link": { "url": "https://www.ibat.ie/", "title": "IBAT" },
+    "institution": {
+      "name": "IBAT",
+      "link": { "url": "https://www.ibat.ie/", "title": "IBAT" }
+    },
+
     "modules": [
       {
         "title": "Diploma in Computer Programming",

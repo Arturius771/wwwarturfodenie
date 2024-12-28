@@ -1,5 +1,21 @@
 [
   {
+    "title": "Practical Astronomy",
+    "description": "A python library with useful astronomical functions.",
+    "link": {
+      "url": "https://github.com/Arturius771/practical_astronomy",
+      "title": "GitHub"
+    }
+  },
+  {
+    "title": "Astronomy Types",
+    "description": "A python type hint library.",
+    "link": {
+      "url": "https://pypi.org/project/astronomy-types/",
+      "title": "pip install astronomy-types"
+    }
+  },
+  {
     "title": "afmaths",
     "description": "A python math library that outputs formatted instructions on how to compute mathematical formulas and expressions. Wish I named it mafs.",
     "link": {
@@ -18,19 +34,5 @@
   {
     "title": "Akamai Frontend",
     "description": "Worked on this project during my internship. Frontend project for an Angular SPA SaaS product. Took on duties such as sprint managers, release engineer, and upgrade engineer in addition to fixing bugs and implementing features in an Agile environment."
-  },
-  {
-    "title": "Volt Website",
-    "description": "Volt Europa Tech Team developer. Vue TS framework.",
-    "link": { "url": "https://www.volteuropa.org/", "title": "Volt Website" }
-  },
-  {
-    "title": "PhasmoCrew Website",
-    "description": "Website developer. Also working on our unnanounced game",
-    "link": { "url": "http://www.phasmocrew.org/#/home", "title": "Website" },
-    "github": {
-      "url": "https://github.com/Arturius771/wwwphasmocreworg-website",
-      "title": "GitHub"
-    }
   }
 ]
