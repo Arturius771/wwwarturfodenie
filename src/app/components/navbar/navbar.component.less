@@ -6,14 +6,19 @@
   align-items: center;
   background-color: #ffffff;
   z-index: 999;
-}
-a {
-  padding: 15px;
-  color: #ff0000;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
+  width: 50%;
+  margin-left: 25%;
+  border: 1px solid #ff0000;
+  border-radius: 50px;
+  a {
+    padding: 15px;
+    color: #ff0000;
+    font-weight: bold;
+    text-decoration: none;
+    &:hover,
+    &:active {
+      // TODO: fix active not working
+      text-decoration: underline;
+    }
+  }
 }
