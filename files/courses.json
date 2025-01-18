@@ -5,7 +5,144 @@
       "name": "Technische Universität Berlin",
       "link": { "url": "https://www.tu.berlin/en/" }
     },
-    "modules": []
+    "modules": [
+      {
+        "title": "Fundamentals of Space Technology",
+        "description": "Space Technology",
+        "link": {
+          "url": "https://www.mse.tu-berlin.de/masters-programme/curriculum/",
+          "title": "Website"
+        }
+      },
+      {
+        "title": "Space Electronics",
+        "description": "Space Technology",
+        "link": {
+          "url": "https://www.mse.tu-berlin.de/masters-programme/curriculum/",
+          "title": "Website"
+        }
+      },
+      {
+        "title": "Space Dynamics and Control",
+        "description": "Space Technology",
+        "link": {
+          "url": "https://www.mse.tu-berlin.de/masters-programme/curriculum/",
+          "title": "Website"
+        }
+      },
+      {
+        "title": "Space Sensors and Instruments",
+        "description": "Space Technology",
+        "link": {
+          "url": "https://www.mse.tu-berlin.de/masters-programme/curriculum/",
+          "title": "Website"
+        }
+      },
+      {
+        "title": "Radiation Workshop",
+        "description": "Space Technology",
+        "link": {
+          "url": "https://www.mse.tu-berlin.de/masters-programme/curriculum/",
+          "title": "Website"
+        }
+      },
+      {
+        "title": "Satellite Technology",
+        "description": "Space Technology",
+        "link": {
+          "url": "https://www.mse.tu-berlin.de/masters-programme/curriculum/",
+          "title": "Website"
+        }
+      },
+      {
+        "title": "Space Propulsion Systems",
+        "description": "Space Technology",
+        "link": {
+          "url": "https://www.mse.tu-berlin.de/masters-programme/curriculum/",
+          "title": "Website"
+        }
+      },
+      {
+        "title": "Space Flight Mechanics",
+        "description": "Space Management & Operations",
+        "link": {
+          "url": "https://www.mse.tu-berlin.de/masters-programme/curriculum/",
+          "title": "Website"
+        }
+      },
+      {
+        "title": "Introduction to Satellite Geodesy",
+        "description": "Space Management & Operations",
+        "link": {
+          "url": "https://www.mse.tu-berlin.de/masters-programme/curriculum/",
+          "title": "Website"
+        }
+      },
+      {
+        "title": "Satellite Communication",
+        "description": "Space Management & Operations",
+        "link": {
+          "url": "https://www.mse.tu-berlin.de/masters-programme/curriculum/",
+          "title": "Website"
+        }
+      },
+      {
+        "title": "Space Mission Planning and operations",
+        "description": "Space Management & Operations",
+        "link": {
+          "url": "https://www.mse.tu-berlin.de/masters-programme/curriculum/",
+          "title": "Website"
+        }
+      },
+      {
+        "title": "Human Spaceflight and Space Psychology",
+        "description": "Space Management & Operations",
+        "link": {
+          "url": "https://www.mse.tu-berlin.de/masters-programme/curriculum/",
+          "title": "Website"
+        }
+      },
+      {
+        "title": "Space System Design Project",
+        "description": "Space System Design",
+        "link": {
+          "url": "https://www.mse.tu-berlin.de/masters-programme/curriculum/",
+          "title": "Website"
+        }
+      },
+      {
+        "title": "Planetary Exploration and Space Robotics",
+        "description": "Space System Design",
+        "link": {
+          "url": "https://www.mse.tu-berlin.de/masters-programme/curriculum/",
+          "title": "Website"
+        }
+      },
+      {
+        "title": "Space Technology Project",
+        "description": "Space System Design",
+        "link": {
+          "url": "https://www.mse.tu-berlin.de/masters-programme/curriculum/",
+          "title": "Website"
+        }
+      },
+      {
+        "title": "Innovation Management and Entrepreneurship",
+        "description": "Interdisiplinary",
+        "link": {
+          "url": "https://www.mse.tu-berlin.de/masters-programme/curriculum/",
+          "title": "Website"
+        }
+      },
+      {
+        "title": "Masters Thesis",
+        "description": "",
+        "link": {
+          "url": "https://www.mse.tu-berlin.de/masters-programme/curriculum/",
+          "title": "Website"
+        }
+      }
+    ]
   },
   {
     "title": "Computing and IT BSc",
