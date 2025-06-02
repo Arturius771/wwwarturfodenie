@@ -23,6 +23,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { StudyRecordComponent } from './components/study-record/study-record.component';
 import { StoreModule } from '@ngrx/store';
+import { TeamSatComponent } from './components/team-sat/team-sat.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { StoreModule } from '@ngrx/store';
     ImageComponent,
     WebsiteLinkComponent,
     ButtonComponent,
+    TeamSatComponent,
   ],
   imports: [
     BrowserModule,
@@ -54,6 +56,7 @@ import { StoreModule } from '@ngrx/store';
       { path: 'home', component: LandingPageComponent },
       { path: 'study-record', component: StudyRecordComponent },
       { path: 'projects', component: ProjectsComponent },
+      { path: 'teamsat', component: TeamSatComponent },
       {
         path: '',
         redirectTo: '',
