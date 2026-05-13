@@ -1,9 +1,0 @@
-{{ resource.author }}
-<span *ngIf="resource.year">({{ resource.year }}) </span>
-<span *ngIf="resource.article_title"> '{{ resource.article_title }}' </span>
-<i *ngIf="resource.url"
-  ><app-website-link [website]="{ url: resource.url, title: resource.title }">{{
-    resource.title
-  }}</app-website-link></i
-><i *ngIf="!resource.url">{{ resource.title }} </i>
-<span *ngIf="resource.edition">ed. {{ resource.edition }}</span>
